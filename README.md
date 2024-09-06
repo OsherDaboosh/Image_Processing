@@ -1,1 +1,3 @@
-## Image Processing Folder\n\nThis folder contains implementations of various image processing algorithms written in both VHDL and C++. These algorithms are designed to run on FPGA platforms and perform real-time image processing tasks.\n\n### Summary:\nImplementation of image processing algorithms in VHDL and C++.
+## Image Processing 
+This folder contains implementations of various image processing algorithms written in both VHDL and C++. 
+These algorithms are designed to run on FPGA platforms and perform real-time image processing tasks.
