@@ -1,0 +1,11 @@
+0.7
+2020.1
+May 27 2020
+20:09:33
+C:/Users/osher/Vivado_Projects/AXIS_SOBEL_IP3/AXIS_SOBEL_IP3.srcs/sim_1/new/tb.vhd,1746095585,vhdl,,,,tb,,,,,,,,
+C:/Users/osher/Vivado_Projects/AXIS_SOBEL_IP3/AXIS_SOBEL_IP3.srcs/sources_1/new/axis_sobel.vhd,1746095493,vhdl,,,,axis_sobel,,,,,,,,
+C:/Users/osher/Vivado_Projects/AXIS_SOBEL_IP3/AXIS_SOBEL_IP3.srcs/sources_1/new/fifo.vhd,1746095409,vhdl,,,,fifo,,,,,,,,
+C:/Users/osher/Vivado_Projects/AXIS_SOBEL_IP3/AXIS_SOBEL_IP3.srcs/sources_1/new/line_buffer.vhd,1746093313,vhdl,,,,line_buffer,,,,,,,,
+C:/Users/osher/Vivado_Projects/AXIS_SOBEL_IP3/AXIS_SOBEL_IP3.srcs/sources_1/new/rgb2gray.vhd,1746095300,vhdl,,,,rgb2gray,,,,,,,,
+C:/Users/osher/Vivado_Projects/AXIS_SOBEL_IP3/AXIS_SOBEL_IP3.srcs/sources_1/new/sobel.vhd,1746093364,vhdl,,,,sobel,,,,,,,,
+C:/Users/osher/Vivado_Projects/AXIS_SOBEL_IP3/AXIS_SOBEL_IP3.srcs/sources_1/new/sobel_control.vhd,1746093336,vhdl,,,,sobel_control,,,,,,,,

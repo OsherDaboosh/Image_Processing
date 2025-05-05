@@ -1,0 +1,342 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Thu May  1 13:49:36 2025
+# Process ID: 8864
+# Current directory: C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/base_pixel_pack_0_synth_1
+# Command line: vivado.exe -log base_pixel_pack_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source base_pixel_pack_0.tcl
+# Log file: C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/base_pixel_pack_0_synth_1/base_pixel_pack_0.vds
+# Journal file: C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/base_pixel_pack_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source base_pixel_pack_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/osher/Vivado_Projects/Base_Overlay/PYNQ-image_v2.6.2/PYNQ-image_v2.6.2/boards/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/osher/Vivado_Projects/AXIS_SOBEL_IP3'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.1/data/ip'.
+Command: synth_design -top base_pixel_pack_0 -part xc7z020clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 7472
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1036.344 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'base_pixel_pack_0' [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_pixel_pack_0/synth/base_pixel_pack_0.vhd:92]
+	Parameter C_S_AXI_AXILITES_ADDR_WIDTH bound to: 5 - type: integer 
+	Parameter C_S_AXI_AXILITES_DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'pixel_pack' declared at 'c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ipshared/415a/hdl/vhdl/pixel_pack.vhd:12' bound to instance 'U0' of component 'pixel_pack' [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_pixel_pack_0/synth/base_pixel_pack_0.vhd:184]
+INFO: [Synth 8-638] synthesizing module 'pixel_pack' [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ipshared/415a/hdl/vhdl/pixel_pack.vhd:51]
+	Parameter C_S_AXI_AXILITES_ADDR_WIDTH bound to: 5 - type: integer 
+	Parameter C_S_AXI_AXILITES_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 5 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'pixel_pack_AXILiteS_s_axi' declared at 'c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ipshared/415a/hdl/vhdl/pixel_pack_AXILiteS_s_axi.vhd:9' bound to instance 'pixel_pack_AXILiteS_s_axi_U' of component 'pixel_pack_AXILiteS_s_axi' [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ipshared/415a/hdl/vhdl/pixel_pack.vhd:475]
+INFO: [Synth 8-638] synthesizing module 'pixel_pack_AXILiteS_s_axi' [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ipshared/415a/hdl/vhdl/pixel_pack_AXILiteS_s_axi.vhd:55]
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 5 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'pixel_pack_AXILiteS_s_axi' (1#1) [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ipshared/415a/hdl/vhdl/pixel_pack_AXILiteS_s_axi.vhd:55]
+	Parameter DataWidth bound to: 24 - type: integer 
+INFO: [Synth 8-3491] module 'regslice_both' declared at 'c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ipshared/415a/hdl/vhdl/regslice_core.vhd:7' bound to instance 'regslice_both_stream_in_24_data_V_U' of component 'regslice_both' [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ipshared/415a/hdl/vhdl/pixel_pack.vhd:505]
+INFO: [Synth 8-638] synthesizing module 'regslice_both' [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ipshared/415a/hdl/vhdl/regslice_core.vhd:22]
+	Parameter DataWidth bound to: 24 - type: integer 
+	Parameter W bound to: 25 - type: integer 
+INFO: [Synth 8-3491] module 'ibuf' declared at 'c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ipshared/415a/hdl/vhdl/regslice_core.vhd:575' bound to instance 'ibuf_inst' of component 'ibuf' [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ipshared/415a/hdl/vhdl/regslice_core.vhd:65]
+INFO: [Synth 8-638] synthesizing module 'xil_defaultlib_ibuf' [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ipshared/415a/hdl/vhdl/regslice_core.vhd:587]
+	Parameter W bound to: 25 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'xil_defaultlib_ibuf' (2#1) [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ipshared/415a/hdl/vhdl/regslice_core.vhd:587]
+	Parameter W bound to: 25 - type: integer 
+INFO: [Synth 8-3491] module 'obuf' declared at 'c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ipshared/415a/hdl/vhdl/regslice_core.vhd:620' bound to instance 'obuf_inst' of component 'obuf' [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ipshared/415a/hdl/vhdl/regslice_core.vhd:76]
+INFO: [Synth 8-638] synthesizing module 'xil_defaultlib_obuf' [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ipshared/415a/hdl/vhdl/regslice_core.vhd:632]
+	Parameter W bound to: 25 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'xil_defaultlib_obuf' (3#1) [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ipshared/415a/hdl/vhdl/regslice_core.vhd:632]
+INFO: [Synth 8-256] done synthesizing module 'regslice_both' (4#1) [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ipshared/415a/hdl/vhdl/regslice_core.vhd:22]
+	Parameter DataWidth bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'regslice_both' declared at 'c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ipshared/415a/hdl/vhdl/regslice_core.vhd:7' bound to instance 'regslice_both_stream_in_24_user_V_U' of component 'regslice_both' [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ipshared/415a/hdl/vhdl/pixel_pack.vhd:519]
+INFO: [Synth 8-638] synthesizing module 'regslice_both__parameterized1' [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ipshared/415a/hdl/vhdl/regslice_core.vhd:22]
+	Parameter DataWidth bound to: 1 - type: integer 
+	Parameter W bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'ibuf' declared at 'c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ipshared/415a/hdl/vhdl/regslice_core.vhd:575' bound to instance 'ibuf_inst' of component 'ibuf' [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ipshared/415a/hdl/vhdl/regslice_core.vhd:65]
+INFO: [Synth 8-638] synthesizing module 'xil_defaultlib_ibuf__parameterized0' [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ipshared/415a/hdl/vhdl/regslice_core.vhd:587]
+	Parameter W bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'xil_defaultlib_ibuf__parameterized0' (4#1) [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ipshared/415a/hdl/vhdl/regslice_core.vhd:587]
+	Parameter W bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'obuf' declared at 'c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ipshared/415a/hdl/vhdl/regslice_core.vhd:620' bound to instance 'obuf_inst' of component 'obuf' [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ipshared/415a/hdl/vhdl/regslice_core.vhd:76]
+INFO: [Synth 8-638] synthesizing module 'xil_defaultlib_obuf__parameterized0' [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ipshared/415a/hdl/vhdl/regslice_core.vhd:632]
+	Parameter W bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'xil_defaultlib_obuf__parameterized0' (4#1) [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ipshared/415a/hdl/vhdl/regslice_core.vhd:632]
+INFO: [Synth 8-256] done synthesizing module 'regslice_both__parameterized1' (4#1) [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ipshared/415a/hdl/vhdl/regslice_core.vhd:22]
+	Parameter DataWidth bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'regslice_both' declared at 'c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ipshared/415a/hdl/vhdl/regslice_core.vhd:7' bound to instance 'regslice_both_stream_in_24_last_V_U' of component 'regslice_both' [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ipshared/415a/hdl/vhdl/pixel_pack.vhd:533]
+	Parameter DataWidth bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'regslice_both' declared at 'c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ipshared/415a/hdl/vhdl/regslice_core.vhd:7' bound to instance 'regslice_both_stream_out_32_data_V_U' of component 'regslice_both' [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ipshared/415a/hdl/vhdl/pixel_pack.vhd:547]
+INFO: [Synth 8-638] synthesizing module 'regslice_both__parameterized3' [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ipshared/415a/hdl/vhdl/regslice_core.vhd:22]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter W bound to: 33 - type: integer 
+INFO: [Synth 8-3491] module 'ibuf' declared at 'c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ipshared/415a/hdl/vhdl/regslice_core.vhd:575' bound to instance 'ibuf_inst' of component 'ibuf' [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ipshared/415a/hdl/vhdl/regslice_core.vhd:65]
+INFO: [Synth 8-638] synthesizing module 'xil_defaultlib_ibuf__parameterized1' [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ipshared/415a/hdl/vhdl/regslice_core.vhd:587]
+	Parameter W bound to: 33 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'xil_defaultlib_ibuf__parameterized1' (4#1) [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ipshared/415a/hdl/vhdl/regslice_core.vhd:587]
+	Parameter W bound to: 33 - type: integer 
+INFO: [Synth 8-3491] module 'obuf' declared at 'c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ipshared/415a/hdl/vhdl/regslice_core.vhd:620' bound to instance 'obuf_inst' of component 'obuf' [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ipshared/415a/hdl/vhdl/regslice_core.vhd:76]
+INFO: [Synth 8-638] synthesizing module 'xil_defaultlib_obuf__parameterized1' [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ipshared/415a/hdl/vhdl/regslice_core.vhd:632]
+	Parameter W bound to: 33 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'xil_defaultlib_obuf__parameterized1' (4#1) [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ipshared/415a/hdl/vhdl/regslice_core.vhd:632]
+INFO: [Synth 8-256] done synthesizing module 'regslice_both__parameterized3' (4#1) [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ipshared/415a/hdl/vhdl/regslice_core.vhd:22]
+	Parameter DataWidth bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'regslice_both' declared at 'c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ipshared/415a/hdl/vhdl/regslice_core.vhd:7' bound to instance 'regslice_both_stream_out_32_user_V_U' of component 'regslice_both' [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ipshared/415a/hdl/vhdl/pixel_pack.vhd:561]
+	Parameter DataWidth bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'regslice_both' declared at 'c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ipshared/415a/hdl/vhdl/regslice_core.vhd:7' bound to instance 'regslice_both_stream_out_32_last_V_U' of component 'regslice_both' [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ipshared/415a/hdl/vhdl/pixel_pack.vhd:575]
+INFO: [Synth 8-256] done synthesizing module 'pixel_pack' (5#1) [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ipshared/415a/hdl/vhdl/pixel_pack.vhd:51]
+INFO: [Synth 8-256] done synthesizing module 'base_pixel_pack_0' (6#1) [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_pixel_pack_0/synth/base_pixel_pack_0.vhd:92]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1096.715 ; gain = 60.371
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1096.715 ; gain = 60.371
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1096.715 ; gain = 60.371
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.051 . Memory (MB): peak = 1096.715 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_pixel_pack_0/constraints/pixel_pack_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_pixel_pack_0/constraints/pixel_pack_ooc.xdc] for cell 'U0'
+Parsing XDC File [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/base_pixel_pack_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/base_pixel_pack_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1223.105 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.096 . Memory (MB): peak = 1229.230 ; gain = 6.125
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1229.230 ; gain = 192.887
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1229.230 ; gain = 192.887
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for U0. (constraint file  C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/base_pixel_pack_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1229.230 ; gain = 192.887
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'pixel_pack_AXILiteS_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'pixel_pack_AXILiteS_s_axi'
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                              011
+*
+                  wridle |                             0010 |                              000
+                  wrdata |                             0100 |                              001
+                  wrresp |                             1000 |                              010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'pixel_pack_AXILiteS_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                              110
+*
+                  rdidle |                              010 |                              100
+                  rddata |                              100 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'pixel_pack_AXILiteS_s_axi'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 1229.230 ; gain = 192.887
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    9 Bit       Adders := 2     
++---Registers : 
+	               96 Bit    Registers := 5     
+	               33 Bit    Registers := 2     
+	               32 Bit    Registers := 10    
+	               25 Bit    Registers := 2     
+	               19 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 6     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 10    
+	                2 Bit    Registers := 14    
+	                1 Bit    Registers := 32    
++---Muxes : 
+	   2 Input   96 Bit        Muxes := 6     
+	   2 Input   33 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 9     
+	   3 Input   32 Bit        Muxes := 1     
+	   2 Input   25 Bit        Muxes := 1     
+	   3 Input   19 Bit        Muxes := 2     
+	   2 Input   18 Bit        Muxes := 1     
+	   2 Input   17 Bit        Muxes := 1     
+	   6 Input   15 Bit        Muxes := 1     
+	   2 Input   14 Bit        Muxes := 1     
+	   3 Input   12 Bit        Muxes := 1     
+	   2 Input   11 Bit        Muxes := 2     
+	   2 Input   10 Bit        Muxes := 1     
+	   2 Input    7 Bit        Muxes := 2     
+	   2 Input    6 Bit        Muxes := 1     
+	   3 Input    5 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 15    
+	   3 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 10    
+	   4 Input    2 Bit        Muxes := 6     
+	   2 Input    1 Bit        Muxes := 40    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 1229.230 ; gain = 192.887
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 1229.230 ; gain = 192.887
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:43 ; elapsed = 00:00:46 . Memory (MB): peak = 1262.785 ; gain = 226.441
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:43 ; elapsed = 00:00:47 . Memory (MB): peak = 1264.891 ; gain = 228.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:49 ; elapsed = 00:00:53 . Memory (MB): peak = 1264.891 ; gain = 228.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:49 ; elapsed = 00:00:53 . Memory (MB): peak = 1264.891 ; gain = 228.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:49 ; elapsed = 00:00:53 . Memory (MB): peak = 1264.891 ; gain = 228.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:49 ; elapsed = 00:00:53 . Memory (MB): peak = 1264.891 ; gain = 228.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:49 ; elapsed = 00:00:53 . Memory (MB): peak = 1264.891 ; gain = 228.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:49 ; elapsed = 00:00:53 . Memory (MB): peak = 1264.891 ; gain = 228.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |     6|
+|2     |LUT1   |     3|
+|3     |LUT2   |    34|
+|4     |LUT3   |   186|
+|5     |LUT4   |   212|
+|6     |LUT5   |   105|
+|7     |LUT6   |   180|
+|8     |FDRE   |  1088|
+|9     |FDSE   |     1|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:49 ; elapsed = 00:00:53 . Memory (MB): peak = 1264.891 ; gain = 228.547
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:34 ; elapsed = 00:00:49 . Memory (MB): peak = 1264.891 ; gain = 96.031
+Synthesis Optimization Complete : Time (s): cpu = 00:00:49 ; elapsed = 00:00:53 . Memory (MB): peak = 1264.891 ; gain = 228.547
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.043 . Memory (MB): peak = 1267.719 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 6 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1267.719 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+61 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:58 ; elapsed = 00:01:06 . Memory (MB): peak = 1267.719 ; gain = 231.375
+INFO: [Common 17-1381] The checkpoint 'C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/base_pixel_pack_0_synth_1/base_pixel_pack_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP base_pixel_pack_0, cache-ID = 85719c0717540c51
+INFO: [Coretcl 2-1174] Renamed 20 cell refs.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/base_pixel_pack_0_synth_1/base_pixel_pack_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file base_pixel_pack_0_utilization_synth.rpt -pb base_pixel_pack_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu May  1 13:50:56 2025...

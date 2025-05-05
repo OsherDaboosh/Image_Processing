@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1746098449">
+  <File Type="PA-TCL" Name="base_wrapper.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="base_wrapper_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="base_wrapper_reports.tcl"/>
+  <File Type="RDS-RDS" Name="base_wrapper.vds"/>
+  <File Type="RDS-UTIL" Name="base_wrapper_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="base_wrapper_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="base_wrapper.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="base_wrapper_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="base_wrapper_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/bd/base/base.bd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Base_Overlay/Base_Overlay.srcs/sources_1/bd/base/base.bd"/>
+        <Attr Name="ImportTime" Val="1584178373"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/base/hdl/base_wrapper.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="base_wrapper"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/xdc.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../AXIS_BGS_BD/AXIS_BGS_BD.srcs/constrs_1/new/xdc.xdc"/>
+        <Attr Name="ImportTime" Val="1742827304"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
+    <Step Id="synth_design"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="base_axis_register_slice_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_m07_regslice_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_auto_pc_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_ps7_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_smartconnect_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_pixel_pack_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_rst_ps7_0_fclk0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_axis_sobel_0_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_m00_regslice_33"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_m03_regslice_30"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_m01_regslice_32"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_axi_dma_0_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_xbar_7"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_rst_ps7_0_fclk1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_m02_regslice_33"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_xbar_9"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_axi_gpio_hdmiin_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_system_interrupts_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_auto_cc_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_xbar_10"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_axi_vdma_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_color_convert_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_hdmi_out_hpd_video_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_color_swap_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_s00_regslice_32"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_rgb2dvi_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_dvi2rgb_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_v_vid_in_axi4s_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_vtc_in_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_axis_register_slice_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_color_convert_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_axi_dynclk_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_color_swap_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_v_axi4s_vid_out_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_vtc_out_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_pixel_unpack_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_m05_regslice_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_auto_pc_4"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_proc_sys_reset_pixelclk_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_axi_gpio_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_m06_regslice_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_auto_pc_3"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_m00_regslice_32"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_m09_regslice_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_auto_pc_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_m08_regslice_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_auto_pc_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_m03_regslice_31"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_m01_regslice_33"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_m02_regslice_32"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_s00_regslice_33"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_auto_cc_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_auto_cc_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_auto_pc_5"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_m04_regslice_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_auto_cc_3"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_auto_us_0"/>
+</GenRun>

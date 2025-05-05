@@ -1,0 +1,459 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Mon May  5 13:42:21 2025
+# Process ID: 8504
+# Current directory: C:/Users/osher/Vivado_Projects/AXIS_GAUSSIAN_BD/AXIS_GAUSSIAN_BD.runs/base_color_convert_0_synth_1
+# Command line: vivado.exe -log base_color_convert_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source base_color_convert_0.tcl
+# Log file: C:/Users/osher/Vivado_Projects/AXIS_GAUSSIAN_BD/AXIS_GAUSSIAN_BD.runs/base_color_convert_0_synth_1/base_color_convert_0.vds
+# Journal file: C:/Users/osher/Vivado_Projects/AXIS_GAUSSIAN_BD/AXIS_GAUSSIAN_BD.runs/base_color_convert_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source base_color_convert_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 1040.160 ; gain = 20.602
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/osher/Vivado_Projects/Base_Overlay/PYNQ-image_v2.6.2/PYNQ-image_v2.6.2/boards/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/osher/Vivado_Projects/AXIS_GAUSSIAN_IP'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.1/data/ip'.
+Command: synth_design -top base_color_convert_0 -part xc7z020clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 796
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1040.160 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'base_color_convert_0' [c:/Users/osher/Vivado_Projects/AXIS_GAUSSIAN_BD/AXIS_GAUSSIAN_BD.srcs/sources_1/bd/base/ip/base_color_convert_0/synth/base_color_convert_0.vhd:92]
+	Parameter C_S_AXI_AXILITES_ADDR_WIDTH bound to: 7 - type: integer 
+	Parameter C_S_AXI_AXILITES_DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'color_convert' declared at 'c:/Users/osher/Vivado_Projects/AXIS_GAUSSIAN_BD/AXIS_GAUSSIAN_BD.srcs/sources_1/bd/base/ipshared/9423/hdl/vhdl/color_convert.vhd:12' bound to instance 'U0' of component 'color_convert' [c:/Users/osher/Vivado_Projects/AXIS_GAUSSIAN_BD/AXIS_GAUSSIAN_BD.srcs/sources_1/bd/base/ip/base_color_convert_0/synth/base_color_convert_0.vhd:191]
+INFO: [Synth 8-638] synthesizing module 'color_convert' [c:/Users/osher/Vivado_Projects/AXIS_GAUSSIAN_BD/AXIS_GAUSSIAN_BD.srcs/sources_1/bd/base/ipshared/9423/hdl/vhdl/color_convert.vhd:51]
+	Parameter C_S_AXI_AXILITES_ADDR_WIDTH bound to: 7 - type: integer 
+	Parameter C_S_AXI_AXILITES_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 7 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'color_convert_AXILiteS_s_axi' declared at 'c:/Users/osher/Vivado_Projects/AXIS_GAUSSIAN_BD/AXIS_GAUSSIAN_BD.srcs/sources_1/bd/base/ipshared/9423/hdl/vhdl/color_convert_AXILiteS_s_axi.vhd:9' bound to instance 'color_convert_AXILiteS_s_axi_U' of component 'color_convert_AXILiteS_s_axi' [c:/Users/osher/Vivado_Projects/AXIS_GAUSSIAN_BD/AXIS_GAUSSIAN_BD.srcs/sources_1/bd/base/ipshared/9423/hdl/vhdl/color_convert.vhd:439]
+INFO: [Synth 8-638] synthesizing module 'color_convert_AXILiteS_s_axi' [c:/Users/osher/Vivado_Projects/AXIS_GAUSSIAN_BD/AXIS_GAUSSIAN_BD.srcs/sources_1/bd/base/ipshared/9423/hdl/vhdl/color_convert_AXILiteS_s_axi.vhd:106]
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 7 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'color_convert_AXILiteS_s_axi' (1#1) [c:/Users/osher/Vivado_Projects/AXIS_GAUSSIAN_BD/AXIS_GAUSSIAN_BD.srcs/sources_1/bd/base/ipshared/9423/hdl/vhdl/color_convert_AXILiteS_s_axi.vhd:106]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 10 - type: integer 
+	Parameter din2_WIDTH bound to: 18 - type: integer 
+	Parameter dout_WIDTH bound to: 19 - type: integer 
+INFO: [Synth 8-3491] module 'color_convert_macbkb' declared at 'c:/Users/osher/Vivado_Projects/AXIS_GAUSSIAN_BD/AXIS_GAUSSIAN_BD.srcs/sources_1/bd/base/ipshared/9423/hdl/vhdl/color_convert_macbkb.vhd:41' bound to instance 'color_convert_macbkb_U1' of component 'color_convert_macbkb' [c:/Users/osher/Vivado_Projects/AXIS_GAUSSIAN_BD/AXIS_GAUSSIAN_BD.srcs/sources_1/bd/base/ipshared/9423/hdl/vhdl/color_convert.vhd:479]
+INFO: [Synth 8-638] synthesizing module 'color_convert_macbkb' [c:/Users/osher/Vivado_Projects/AXIS_GAUSSIAN_BD/AXIS_GAUSSIAN_BD.srcs/sources_1/bd/base/ipshared/9423/hdl/vhdl/color_convert_macbkb.vhd:56]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 10 - type: integer 
+	Parameter din2_WIDTH bound to: 18 - type: integer 
+	Parameter dout_WIDTH bound to: 19 - type: integer 
+INFO: [Synth 8-3491] module 'color_convert_macbkb_DSP48_0' declared at 'c:/Users/osher/Vivado_Projects/AXIS_GAUSSIAN_BD/AXIS_GAUSSIAN_BD.srcs/sources_1/bd/base/ipshared/9423/hdl/vhdl/color_convert_macbkb.vhd:9' bound to instance 'color_convert_macbkb_DSP48_0_U' of component 'color_convert_macbkb_DSP48_0' [c:/Users/osher/Vivado_Projects/AXIS_GAUSSIAN_BD/AXIS_GAUSSIAN_BD.srcs/sources_1/bd/base/ipshared/9423/hdl/vhdl/color_convert_macbkb.vhd:68]
+INFO: [Synth 8-638] synthesizing module 'color_convert_macbkb_DSP48_0' [c:/Users/osher/Vivado_Projects/AXIS_GAUSSIAN_BD/AXIS_GAUSSIAN_BD.srcs/sources_1/bd/base/ipshared/9423/hdl/vhdl/color_convert_macbkb.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'color_convert_macbkb_DSP48_0' (2#1) [c:/Users/osher/Vivado_Projects/AXIS_GAUSSIAN_BD/AXIS_GAUSSIAN_BD.srcs/sources_1/bd/base/ipshared/9423/hdl/vhdl/color_convert_macbkb.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'color_convert_macbkb' (3#1) [c:/Users/osher/Vivado_Projects/AXIS_GAUSSIAN_BD/AXIS_GAUSSIAN_BD.srcs/sources_1/bd/base/ipshared/9423/hdl/vhdl/color_convert_macbkb.vhd:56]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 10 - type: integer 
+	Parameter din2_WIDTH bound to: 18 - type: integer 
+	Parameter dout_WIDTH bound to: 19 - type: integer 
+INFO: [Synth 8-3491] module 'color_convert_macbkb' declared at 'c:/Users/osher/Vivado_Projects/AXIS_GAUSSIAN_BD/AXIS_GAUSSIAN_BD.srcs/sources_1/bd/base/ipshared/9423/hdl/vhdl/color_convert_macbkb.vhd:41' bound to instance 'color_convert_macbkb_U2' of component 'color_convert_macbkb' [c:/Users/osher/Vivado_Projects/AXIS_GAUSSIAN_BD/AXIS_GAUSSIAN_BD.srcs/sources_1/bd/base/ipshared/9423/hdl/vhdl/color_convert.vhd:493]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 10 - type: integer 
+	Parameter din2_WIDTH bound to: 18 - type: integer 
+	Parameter dout_WIDTH bound to: 19 - type: integer 
+INFO: [Synth 8-3491] module 'color_convert_macbkb' declared at 'c:/Users/osher/Vivado_Projects/AXIS_GAUSSIAN_BD/AXIS_GAUSSIAN_BD.srcs/sources_1/bd/base/ipshared/9423/hdl/vhdl/color_convert_macbkb.vhd:41' bound to instance 'color_convert_macbkb_U3' of component 'color_convert_macbkb' [c:/Users/osher/Vivado_Projects/AXIS_GAUSSIAN_BD/AXIS_GAUSSIAN_BD.srcs/sources_1/bd/base/ipshared/9423/hdl/vhdl/color_convert.vhd:507]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 10 - type: integer 
+	Parameter din2_WIDTH bound to: 19 - type: integer 
+	Parameter dout_WIDTH bound to: 20 - type: integer 
+INFO: [Synth 8-3491] module 'color_convert_maccud' declared at 'c:/Users/osher/Vivado_Projects/AXIS_GAUSSIAN_BD/AXIS_GAUSSIAN_BD.srcs/sources_1/bd/base/ipshared/9423/hdl/vhdl/color_convert_maccud.vhd:41' bound to instance 'color_convert_maccud_U4' of component 'color_convert_maccud' [c:/Users/osher/Vivado_Projects/AXIS_GAUSSIAN_BD/AXIS_GAUSSIAN_BD.srcs/sources_1/bd/base/ipshared/9423/hdl/vhdl/color_convert.vhd:521]
+INFO: [Synth 8-638] synthesizing module 'color_convert_maccud' [c:/Users/osher/Vivado_Projects/AXIS_GAUSSIAN_BD/AXIS_GAUSSIAN_BD.srcs/sources_1/bd/base/ipshared/9423/hdl/vhdl/color_convert_maccud.vhd:56]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 10 - type: integer 
+	Parameter din2_WIDTH bound to: 19 - type: integer 
+	Parameter dout_WIDTH bound to: 20 - type: integer 
+INFO: [Synth 8-3491] module 'color_convert_maccud_DSP48_1' declared at 'c:/Users/osher/Vivado_Projects/AXIS_GAUSSIAN_BD/AXIS_GAUSSIAN_BD.srcs/sources_1/bd/base/ipshared/9423/hdl/vhdl/color_convert_maccud.vhd:9' bound to instance 'color_convert_maccud_DSP48_1_U' of component 'color_convert_maccud_DSP48_1' [c:/Users/osher/Vivado_Projects/AXIS_GAUSSIAN_BD/AXIS_GAUSSIAN_BD.srcs/sources_1/bd/base/ipshared/9423/hdl/vhdl/color_convert_maccud.vhd:68]
+INFO: [Synth 8-638] synthesizing module 'color_convert_maccud_DSP48_1' [c:/Users/osher/Vivado_Projects/AXIS_GAUSSIAN_BD/AXIS_GAUSSIAN_BD.srcs/sources_1/bd/base/ipshared/9423/hdl/vhdl/color_convert_maccud.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'color_convert_maccud_DSP48_1' (4#1) [c:/Users/osher/Vivado_Projects/AXIS_GAUSSIAN_BD/AXIS_GAUSSIAN_BD.srcs/sources_1/bd/base/ipshared/9423/hdl/vhdl/color_convert_maccud.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'color_convert_maccud' (5#1) [c:/Users/osher/Vivado_Projects/AXIS_GAUSSIAN_BD/AXIS_GAUSSIAN_BD.srcs/sources_1/bd/base/ipshared/9423/hdl/vhdl/color_convert_maccud.vhd:56]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 10 - type: integer 
+	Parameter din2_WIDTH bound to: 19 - type: integer 
+	Parameter dout_WIDTH bound to: 20 - type: integer 
+INFO: [Synth 8-3491] module 'color_convert_maccud' declared at 'c:/Users/osher/Vivado_Projects/AXIS_GAUSSIAN_BD/AXIS_GAUSSIAN_BD.srcs/sources_1/bd/base/ipshared/9423/hdl/vhdl/color_convert_maccud.vhd:41' bound to instance 'color_convert_maccud_U5' of component 'color_convert_maccud' [c:/Users/osher/Vivado_Projects/AXIS_GAUSSIAN_BD/AXIS_GAUSSIAN_BD.srcs/sources_1/bd/base/ipshared/9423/hdl/vhdl/color_convert.vhd:535]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 10 - type: integer 
+	Parameter din2_WIDTH bound to: 19 - type: integer 
+	Parameter dout_WIDTH bound to: 20 - type: integer 
+INFO: [Synth 8-3491] module 'color_convert_maccud' declared at 'c:/Users/osher/Vivado_Projects/AXIS_GAUSSIAN_BD/AXIS_GAUSSIAN_BD.srcs/sources_1/bd/base/ipshared/9423/hdl/vhdl/color_convert_maccud.vhd:41' bound to instance 'color_convert_maccud_U6' of component 'color_convert_maccud' [c:/Users/osher/Vivado_Projects/AXIS_GAUSSIAN_BD/AXIS_GAUSSIAN_BD.srcs/sources_1/bd/base/ipshared/9423/hdl/vhdl/color_convert.vhd:549]
+	Parameter DataWidth bound to: 24 - type: integer 
+INFO: [Synth 8-3491] module 'regslice_both' declared at 'c:/Users/osher/Vivado_Projects/AXIS_GAUSSIAN_BD/AXIS_GAUSSIAN_BD.srcs/sources_1/bd/base/ipshared/9423/hdl/vhdl/regslice_core.vhd:7' bound to instance 'regslice_both_stream_in_24_data_U' of component 'regslice_both' [c:/Users/osher/Vivado_Projects/AXIS_GAUSSIAN_BD/AXIS_GAUSSIAN_BD.srcs/sources_1/bd/base/ipshared/9423/hdl/vhdl/color_convert.vhd:563]
+INFO: [Synth 8-638] synthesizing module 'regslice_both' [c:/Users/osher/Vivado_Projects/AXIS_GAUSSIAN_BD/AXIS_GAUSSIAN_BD.srcs/sources_1/bd/base/ipshared/9423/hdl/vhdl/regslice_core.vhd:22]
+	Parameter DataWidth bound to: 24 - type: integer 
+	Parameter W bound to: 25 - type: integer 
+INFO: [Synth 8-3491] module 'ibuf' declared at 'c:/Users/osher/Vivado_Projects/AXIS_GAUSSIAN_BD/AXIS_GAUSSIAN_BD.srcs/sources_1/bd/base/ipshared/9423/hdl/vhdl/regslice_core.vhd:575' bound to instance 'ibuf_inst' of component 'ibuf' [c:/Users/osher/Vivado_Projects/AXIS_GAUSSIAN_BD/AXIS_GAUSSIAN_BD.srcs/sources_1/bd/base/ipshared/9423/hdl/vhdl/regslice_core.vhd:65]
+INFO: [Synth 8-638] synthesizing module 'xil_defaultlib_ibuf' [c:/Users/osher/Vivado_Projects/AXIS_GAUSSIAN_BD/AXIS_GAUSSIAN_BD.srcs/sources_1/bd/base/ipshared/9423/hdl/vhdl/regslice_core.vhd:587]
+	Parameter W bound to: 25 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'xil_defaultlib_ibuf' (6#1) [c:/Users/osher/Vivado_Projects/AXIS_GAUSSIAN_BD/AXIS_GAUSSIAN_BD.srcs/sources_1/bd/base/ipshared/9423/hdl/vhdl/regslice_core.vhd:587]
+	Parameter W bound to: 25 - type: integer 
+INFO: [Synth 8-3491] module 'obuf' declared at 'c:/Users/osher/Vivado_Projects/AXIS_GAUSSIAN_BD/AXIS_GAUSSIAN_BD.srcs/sources_1/bd/base/ipshared/9423/hdl/vhdl/regslice_core.vhd:620' bound to instance 'obuf_inst' of component 'obuf' [c:/Users/osher/Vivado_Projects/AXIS_GAUSSIAN_BD/AXIS_GAUSSIAN_BD.srcs/sources_1/bd/base/ipshared/9423/hdl/vhdl/regslice_core.vhd:76]
+INFO: [Synth 8-638] synthesizing module 'xil_defaultlib_obuf' [c:/Users/osher/Vivado_Projects/AXIS_GAUSSIAN_BD/AXIS_GAUSSIAN_BD.srcs/sources_1/bd/base/ipshared/9423/hdl/vhdl/regslice_core.vhd:632]
+	Parameter W bound to: 25 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'xil_defaultlib_obuf' (7#1) [c:/Users/osher/Vivado_Projects/AXIS_GAUSSIAN_BD/AXIS_GAUSSIAN_BD.srcs/sources_1/bd/base/ipshared/9423/hdl/vhdl/regslice_core.vhd:632]
+INFO: [Synth 8-256] done synthesizing module 'regslice_both' (8#1) [c:/Users/osher/Vivado_Projects/AXIS_GAUSSIAN_BD/AXIS_GAUSSIAN_BD.srcs/sources_1/bd/base/ipshared/9423/hdl/vhdl/regslice_core.vhd:22]
+	Parameter DataWidth bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'regslice_both' declared at 'c:/Users/osher/Vivado_Projects/AXIS_GAUSSIAN_BD/AXIS_GAUSSIAN_BD.srcs/sources_1/bd/base/ipshared/9423/hdl/vhdl/regslice_core.vhd:7' bound to instance 'regslice_both_stream_in_24_user_V_U' of component 'regslice_both' [c:/Users/osher/Vivado_Projects/AXIS_GAUSSIAN_BD/AXIS_GAUSSIAN_BD.srcs/sources_1/bd/base/ipshared/9423/hdl/vhdl/color_convert.vhd:577]
+INFO: [Synth 8-638] synthesizing module 'regslice_both__parameterized1' [c:/Users/osher/Vivado_Projects/AXIS_GAUSSIAN_BD/AXIS_GAUSSIAN_BD.srcs/sources_1/bd/base/ipshared/9423/hdl/vhdl/regslice_core.vhd:22]
+	Parameter DataWidth bound to: 1 - type: integer 
+	Parameter W bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'ibuf' declared at 'c:/Users/osher/Vivado_Projects/AXIS_GAUSSIAN_BD/AXIS_GAUSSIAN_BD.srcs/sources_1/bd/base/ipshared/9423/hdl/vhdl/regslice_core.vhd:575' bound to instance 'ibuf_inst' of component 'ibuf' [c:/Users/osher/Vivado_Projects/AXIS_GAUSSIAN_BD/AXIS_GAUSSIAN_BD.srcs/sources_1/bd/base/ipshared/9423/hdl/vhdl/regslice_core.vhd:65]
+INFO: [Synth 8-638] synthesizing module 'xil_defaultlib_ibuf__parameterized0' [c:/Users/osher/Vivado_Projects/AXIS_GAUSSIAN_BD/AXIS_GAUSSIAN_BD.srcs/sources_1/bd/base/ipshared/9423/hdl/vhdl/regslice_core.vhd:587]
+	Parameter W bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'xil_defaultlib_ibuf__parameterized0' (8#1) [c:/Users/osher/Vivado_Projects/AXIS_GAUSSIAN_BD/AXIS_GAUSSIAN_BD.srcs/sources_1/bd/base/ipshared/9423/hdl/vhdl/regslice_core.vhd:587]
+	Parameter W bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'obuf' declared at 'c:/Users/osher/Vivado_Projects/AXIS_GAUSSIAN_BD/AXIS_GAUSSIAN_BD.srcs/sources_1/bd/base/ipshared/9423/hdl/vhdl/regslice_core.vhd:620' bound to instance 'obuf_inst' of component 'obuf' [c:/Users/osher/Vivado_Projects/AXIS_GAUSSIAN_BD/AXIS_GAUSSIAN_BD.srcs/sources_1/bd/base/ipshared/9423/hdl/vhdl/regslice_core.vhd:76]
+INFO: [Synth 8-638] synthesizing module 'xil_defaultlib_obuf__parameterized0' [c:/Users/osher/Vivado_Projects/AXIS_GAUSSIAN_BD/AXIS_GAUSSIAN_BD.srcs/sources_1/bd/base/ipshared/9423/hdl/vhdl/regslice_core.vhd:632]
+	Parameter W bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'xil_defaultlib_obuf__parameterized0' (8#1) [c:/Users/osher/Vivado_Projects/AXIS_GAUSSIAN_BD/AXIS_GAUSSIAN_BD.srcs/sources_1/bd/base/ipshared/9423/hdl/vhdl/regslice_core.vhd:632]
+INFO: [Synth 8-256] done synthesizing module 'regslice_both__parameterized1' (8#1) [c:/Users/osher/Vivado_Projects/AXIS_GAUSSIAN_BD/AXIS_GAUSSIAN_BD.srcs/sources_1/bd/base/ipshared/9423/hdl/vhdl/regslice_core.vhd:22]
+	Parameter DataWidth bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'regslice_both' declared at 'c:/Users/osher/Vivado_Projects/AXIS_GAUSSIAN_BD/AXIS_GAUSSIAN_BD.srcs/sources_1/bd/base/ipshared/9423/hdl/vhdl/regslice_core.vhd:7' bound to instance 'regslice_both_stream_in_24_last_V_U' of component 'regslice_both' [c:/Users/osher/Vivado_Projects/AXIS_GAUSSIAN_BD/AXIS_GAUSSIAN_BD.srcs/sources_1/bd/base/ipshared/9423/hdl/vhdl/color_convert.vhd:591]
+	Parameter DataWidth bound to: 24 - type: integer 
+INFO: [Synth 8-3491] module 'regslice_both' declared at 'c:/Users/osher/Vivado_Projects/AXIS_GAUSSIAN_BD/AXIS_GAUSSIAN_BD.srcs/sources_1/bd/base/ipshared/9423/hdl/vhdl/regslice_core.vhd:7' bound to instance 'regslice_both_stream_out_24_data_U' of component 'regslice_both' [c:/Users/osher/Vivado_Projects/AXIS_GAUSSIAN_BD/AXIS_GAUSSIAN_BD.srcs/sources_1/bd/base/ipshared/9423/hdl/vhdl/color_convert.vhd:605]
+	Parameter DataWidth bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'regslice_both' declared at 'c:/Users/osher/Vivado_Projects/AXIS_GAUSSIAN_BD/AXIS_GAUSSIAN_BD.srcs/sources_1/bd/base/ipshared/9423/hdl/vhdl/regslice_core.vhd:7' bound to instance 'regslice_both_stream_out_24_user_V_U' of component 'regslice_both' [c:/Users/osher/Vivado_Projects/AXIS_GAUSSIAN_BD/AXIS_GAUSSIAN_BD.srcs/sources_1/bd/base/ipshared/9423/hdl/vhdl/color_convert.vhd:619]
+	Parameter DataWidth bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'regslice_both' declared at 'c:/Users/osher/Vivado_Projects/AXIS_GAUSSIAN_BD/AXIS_GAUSSIAN_BD.srcs/sources_1/bd/base/ipshared/9423/hdl/vhdl/regslice_core.vhd:7' bound to instance 'regslice_both_stream_out_24_last_V_U' of component 'regslice_both' [c:/Users/osher/Vivado_Projects/AXIS_GAUSSIAN_BD/AXIS_GAUSSIAN_BD.srcs/sources_1/bd/base/ipshared/9423/hdl/vhdl/color_convert.vhd:633]
+INFO: [Synth 8-256] done synthesizing module 'color_convert' (9#1) [c:/Users/osher/Vivado_Projects/AXIS_GAUSSIAN_BD/AXIS_GAUSSIAN_BD.srcs/sources_1/bd/base/ipshared/9423/hdl/vhdl/color_convert.vhd:51]
+INFO: [Synth 8-256] done synthesizing module 'base_color_convert_0' (10#1) [c:/Users/osher/Vivado_Projects/AXIS_GAUSSIAN_BD/AXIS_GAUSSIAN_BD.srcs/sources_1/bd/base/ip/base_color_convert_0/synth/base_color_convert_0.vhd:92]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 1097.090 ; gain = 56.930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 1097.090 ; gain = 56.930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 1097.090 ; gain = 56.930
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 1097.090 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/osher/Vivado_Projects/AXIS_GAUSSIAN_BD/AXIS_GAUSSIAN_BD.srcs/sources_1/bd/base/ip/base_color_convert_0/constraints/color_convert_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/Users/osher/Vivado_Projects/AXIS_GAUSSIAN_BD/AXIS_GAUSSIAN_BD.srcs/sources_1/bd/base/ip/base_color_convert_0/constraints/color_convert_ooc.xdc] for cell 'U0'
+Parsing XDC File [C:/Users/osher/Vivado_Projects/AXIS_GAUSSIAN_BD/AXIS_GAUSSIAN_BD.runs/base_color_convert_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/osher/Vivado_Projects/AXIS_GAUSSIAN_BD/AXIS_GAUSSIAN_BD.runs/base_color_convert_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1200.797 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.093 . Memory (MB): peak = 1210.590 ; gain = 9.793
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:26 ; elapsed = 00:00:31 . Memory (MB): peak = 1210.590 ; gain = 170.430
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:26 ; elapsed = 00:00:31 . Memory (MB): peak = 1210.590 ; gain = 170.430
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for U0. (constraint file  C:/Users/osher/Vivado_Projects/AXIS_GAUSSIAN_BD/AXIS_GAUSSIAN_BD.runs/base_color_convert_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:31 . Memory (MB): peak = 1210.590 ; gain = 170.430
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'color_convert_AXILiteS_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'color_convert_AXILiteS_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                              011
+*
+                  wridle |                             0010 |                              000
+                  wrdata |                             0100 |                              001
+                  wrresp |                             1000 |                              010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'color_convert_AXILiteS_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                              110
+*
+                  rdidle |                              010 |                              100
+                  rddata |                              100 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'color_convert_AXILiteS_s_axi'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:28 ; elapsed = 00:00:33 . Memory (MB): peak = 1210.590 ; gain = 170.430
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   20 Bit       Adders := 3     
+	   2 Input    8 Bit       Adders := 3     
++---XORs : 
+	   2 Input      1 Bit         XORs := 12    
++---Registers : 
+	               32 Bit    Registers := 1     
+	               25 Bit    Registers := 4     
+	               20 Bit    Registers := 3     
+	               19 Bit    Registers := 3     
+	               18 Bit    Registers := 2     
+	               10 Bit    Registers := 39    
+	                9 Bit    Registers := 3     
+	                8 Bit    Registers := 8     
+	                7 Bit    Registers := 1     
+	                2 Bit    Registers := 14    
+	                1 Bit    Registers := 26    
++---Muxes : 
+	   2 Input   25 Bit        Muxes := 2     
+	   2 Input    8 Bit        Muxes := 9     
+	   4 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 3     
+	   3 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 10    
+	   4 Input    2 Bit        Muxes := 6     
+	   2 Input    1 Bit        Muxes := 27    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+DSP Report: Generating DSP p, operation Mode is: C+A*B.
+DSP Report: operator p is absorbed into DSP p.
+DSP Report: operator m is absorbed into DSP p.
+DSP Report: Generating DSP p, operation Mode is: C+A*B.
+DSP Report: operator p is absorbed into DSP p.
+DSP Report: operator m is absorbed into DSP p.
+DSP Report: Generating DSP p, operation Mode is: C+A*B.
+DSP Report: operator p is absorbed into DSP p.
+DSP Report: operator m is absorbed into DSP p.
+DSP Report: Generating DSP p, operation Mode is: C+A*B.
+DSP Report: operator p is absorbed into DSP p.
+DSP Report: operator m is absorbed into DSP p.
+DSP Report: Generating DSP p, operation Mode is: C+A*B.
+DSP Report: operator p is absorbed into DSP p.
+DSP Report: operator m is absorbed into DSP p.
+DSP Report: Generating DSP p, operation Mode is: C+A*B.
+DSP Report: operator p is absorbed into DSP p.
+DSP Report: operator m is absorbed into DSP p.
+DSP Report: Generating DSP r_V_12_reg_986_reg, operation Mode is: (A''*B2)'.
+DSP Report: register r_V_12_reg_986_reg is absorbed into DSP r_V_12_reg_986_reg.
+DSP Report: register color_convert_AXILiteS_s_axi_U/int_c1_c1_V_reg is absorbed into DSP r_V_12_reg_986_reg.
+DSP Report: register c1_c1_V_0_data_reg_reg is absorbed into DSP r_V_12_reg_986_reg.
+DSP Report: register r_V_12_reg_986_reg is absorbed into DSP r_V_12_reg_986_reg.
+DSP Report: operator r_V_12_fu_246_p2 is absorbed into DSP r_V_12_reg_986_reg.
+DSP Report: Generating DSP r_V_16_reg_996_reg, operation Mode is: (A''*B2)'.
+DSP Report: register r_V_16_reg_996_reg is absorbed into DSP r_V_16_reg_996_reg.
+DSP Report: register color_convert_AXILiteS_s_axi_U/int_c2_c2_V_reg is absorbed into DSP r_V_16_reg_996_reg.
+DSP Report: register c2_c2_V_0_data_reg_reg is absorbed into DSP r_V_16_reg_996_reg.
+DSP Report: register r_V_16_reg_996_reg is absorbed into DSP r_V_16_reg_996_reg.
+DSP Report: operator r_V_16_fu_259_p2 is absorbed into DSP r_V_16_reg_996_reg.
+DSP Report: Generating DSP r_V_19_reg_1001_reg, operation Mode is: (A''*B2)'.
+DSP Report: register r_V_19_reg_1001_reg is absorbed into DSP r_V_19_reg_1001_reg.
+DSP Report: register color_convert_AXILiteS_s_axi_U/int_c3_c2_V_reg is absorbed into DSP r_V_19_reg_1001_reg.
+DSP Report: register c3_c2_V_0_data_reg_reg is absorbed into DSP r_V_19_reg_1001_reg.
+DSP Report: register r_V_19_reg_1001_reg is absorbed into DSP r_V_19_reg_1001_reg.
+DSP Report: operator r_V_19_fu_269_p2 is absorbed into DSP r_V_19_reg_1001_reg.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:40 . Memory (MB): peak = 1210.590 ; gain = 170.430
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping	Report (see note below)
++-----------------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name                  | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-----------------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|color_convert_macbkb_DSP48_0 | C+A*B       | 10     | 9      | 18     | -      | 19     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|color_convert_macbkb_DSP48_0 | C+A*B       | 10     | 9      | 18     | -      | 19     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|color_convert_macbkb_DSP48_0 | C+A*B       | 10     | 9      | 18     | -      | 19     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|color_convert_maccud_DSP48_1 | C+A*B       | 10     | 9      | 19     | -      | 20     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|color_convert_maccud_DSP48_1 | C+A*B       | 10     | 9      | 19     | -      | 20     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|color_convert_maccud_DSP48_1 | C+A*B       | 10     | 9      | 19     | -      | 20     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|color_convert                | (A''*B2)'   | 10     | 9      | -      | -      | 19     | 2    | 1    | -    | -    | -     | 1    | 0    | 
+|color_convert                | (A''*B2)'   | 10     | 9      | -      | -      | 19     | 2    | 1    | -    | -    | -     | 1    | 0    | 
+|color_convert                | (A''*B2)'   | 10     | 9      | -      | -      | 19     | 2    | 1    | -    | -    | -     | 1    | 0    | 
++-----------------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:58 ; elapsed = 00:01:07 . Memory (MB): peak = 1228.609 ; gain = 188.449
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:59 ; elapsed = 00:01:08 . Memory (MB): peak = 1232.449 ; gain = 192.289
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:01 ; elapsed = 00:01:10 . Memory (MB): peak = 1261.086 ; gain = 220.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:09 ; elapsed = 00:01:21 . Memory (MB): peak = 1263.559 ; gain = 223.398
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:09 ; elapsed = 00:01:21 . Memory (MB): peak = 1263.559 ; gain = 223.398
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:09 ; elapsed = 00:01:21 . Memory (MB): peak = 1263.559 ; gain = 223.398
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:09 ; elapsed = 00:01:21 . Memory (MB): peak = 1263.559 ; gain = 223.398
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:10 ; elapsed = 00:01:21 . Memory (MB): peak = 1263.559 ; gain = 223.398
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:10 ; elapsed = 00:01:21 . Memory (MB): peak = 1263.559 ; gain = 223.398
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++--------------+----------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name   | RTL Name                                           | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++--------------+----------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|color_convert | bias_c1_V_read_reg_945_pp0_iter3_reg_reg[9]        | 3      | 10    | NO           | NO                 | YES               | 10     | 0       | 
+|color_convert | bias_c2_V_read_reg_940_pp0_iter3_reg_reg[9]        | 3      | 10    | NO           | NO                 | YES               | 10     | 0       | 
+|color_convert | bias_c3_V_read_reg_935_pp0_iter3_reg_reg[9]        | 3      | 10    | NO           | NO                 | YES               | 10     | 0       | 
+|color_convert | stream_in_24_user_V_s_reg_910_pp0_iter4_reg_reg[0] | 5      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|color_convert | stream_in_24_last_V_s_reg_915_pp0_iter4_reg_reg[0] | 5      | 1     | NO           | NO                 | YES               | 1      | 0       | 
++--------------+----------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |CARRY4  |    12|
+|2     |DSP48E1 |     9|
+|4     |LUT1    |     4|
+|5     |LUT2    |    51|
+|6     |LUT3    |   163|
+|7     |LUT4    |    53|
+|8     |LUT5    |    25|
+|9     |LUT6    |    84|
+|10    |SRL16E  |    32|
+|11    |FDRE    |   399|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:10 ; elapsed = 00:01:21 . Memory (MB): peak = 1263.559 ; gain = 223.398
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:52 ; elapsed = 00:01:16 . Memory (MB): peak = 1263.559 ; gain = 109.898
+Synthesis Optimization Complete : Time (s): cpu = 00:01:10 ; elapsed = 00:01:22 . Memory (MB): peak = 1263.559 ; gain = 223.398
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 1263.559 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 21 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1263.559 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+68 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:22 ; elapsed = 00:01:44 . Memory (MB): peak = 1263.559 ; gain = 223.398
+INFO: [Common 17-1381] The checkpoint 'C:/Users/osher/Vivado_Projects/AXIS_GAUSSIAN_BD/AXIS_GAUSSIAN_BD.runs/base_color_convert_0_synth_1/base_color_convert_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP base_color_convert_0, cache-ID = 69addf7471bfa8bd
+INFO: [Coretcl 2-1174] Renamed 32 cell refs.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/osher/Vivado_Projects/AXIS_GAUSSIAN_BD/AXIS_GAUSSIAN_BD.runs/base_color_convert_0_synth_1/base_color_convert_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file base_color_convert_0_utilization_synth.rpt -pb base_color_convert_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon May  5 13:44:24 2025...

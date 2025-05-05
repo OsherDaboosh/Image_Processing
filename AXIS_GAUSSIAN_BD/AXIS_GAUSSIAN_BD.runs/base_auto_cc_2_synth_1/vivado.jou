@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Mon May  5 13:57:13 2025
+# Process ID: 9992
+# Current directory: C:/Users/osher/Vivado_Projects/AXIS_GAUSSIAN_BD/AXIS_GAUSSIAN_BD.runs/base_auto_cc_2_synth_1
+# Command line: vivado.exe -log base_auto_cc_2.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source base_auto_cc_2.tcl
+# Log file: C:/Users/osher/Vivado_Projects/AXIS_GAUSSIAN_BD/AXIS_GAUSSIAN_BD.runs/base_auto_cc_2_synth_1/base_auto_cc_2.vds
+# Journal file: C:/Users/osher/Vivado_Projects/AXIS_GAUSSIAN_BD/AXIS_GAUSSIAN_BD.runs/base_auto_cc_2_synth_1\vivado.jou
+#-----------------------------------------------------------
+source base_auto_cc_2.tcl -notrace

@@ -1,0 +1,1107 @@
+
+*** Running vivado
+    with args -log base_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source base_wrapper.tcl
+
+
+
+****** Vivado v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source base_wrapper.tcl -notrace
+create_project: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1023.695 ; gain = 0.000
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/osher/Vivado_Projects/Base_Overlay/PYNQ-image_v2.6.2/PYNQ-image_v2.6.2/boards/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/osher/Vivado_Projects/AXIS_SOBEL_IP3'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.1/data/ip'.
+add_files: Time (s): cpu = 00:00:11 ; elapsed = 00:00:24 . Memory (MB): peak = 1023.695 ; gain = 0.000
+Command: synth_design -top base_wrapper -part xc7z020clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 13448
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1087.066 ; gain = 63.371
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'base_wrapper' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/hdl/base_wrapper.vhd:52]
+INFO: [Synth 8-3491] module 'base' declared at 'C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/synth/base.vhd:13147' bound to instance 'base_i' of component 'base' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/hdl/base_wrapper.vhd:109]
+INFO: [Synth 8-638] synthesizing module 'base' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/synth/base.vhd:13193]
+WARNING: [Synth 8-5640] Port 'axi_dma_tstvec' is missing in component declaration [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/synth/base.vhd:13412]
+INFO: [Synth 8-3491] module 'base_axi_dma_0_2' declared at 'C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/synth_1/.Xil/Vivado-7784-Osher/realtime/base_axi_dma_0_2_stub.vhdl:5' bound to instance 'axi_dma_0' of component 'base_axi_dma_0_2' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/synth/base.vhd:13974]
+INFO: [Synth 8-638] synthesizing module 'base_axi_dma_0_2' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/synth_1/.Xil/Vivado-7784-Osher/realtime/base_axi_dma_0_2_stub.vhdl:75]
+INFO: [Synth 8-3491] module 'base_axis_sobel_0_2' declared at 'C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/synth_1/.Xil/Vivado-7784-Osher/realtime/base_axis_sobel_0_2_stub.vhdl:5' bound to instance 'axis_sobel_0' of component 'base_axis_sobel_0_2' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/synth/base.vhd:14040]
+INFO: [Synth 8-638] synthesizing module 'base_axis_sobel_0_2' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/synth_1/.Xil/Vivado-7784-Osher/realtime/base_axis_sobel_0_2_stub.vhdl:22]
+INFO: [Synth 8-3491] module 'base_ps7_0_0' declared at 'C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/synth_1/.Xil/Vivado-7784-Osher/realtime/base_ps7_0_0_stub.vhdl:5' bound to instance 'ps7_0' of component 'base_ps7_0_0' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/synth/base.vhd:14054]
+INFO: [Synth 8-638] synthesizing module 'base_ps7_0_0' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/synth_1/.Xil/Vivado-7784-Osher/realtime/base_ps7_0_0_stub.vhdl:172]
+INFO: [Synth 8-638] synthesizing module 'base_ps7_0_axi_periph1_0' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/synth/base.vhd:9662]
+INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_7VXYTM' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/synth/base.vhd:1706]
+INFO: [Synth 8-3491] module 'base_auto_pc_0' declared at 'C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/synth_1/.Xil/Vivado-7784-Osher/realtime/base_auto_pc_0_stub.vhdl:5' bound to instance 'auto_pc' of component 'base_auto_pc_0' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/synth/base.vhd:1956]
+INFO: [Synth 8-638] synthesizing module 'base_auto_pc_0' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/synth_1/.Xil/Vivado-7784-Osher/realtime/base_auto_pc_0_stub.vhdl:71]
+INFO: [Synth 8-3491] module 'base_m00_regslice_32' declared at 'C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/synth_1/.Xil/Vivado-7784-Osher/realtime/base_m00_regslice_32_stub.vhdl:5' bound to instance 'm00_regslice' of component 'base_m00_regslice_32' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/synth/base.vhd:2019]
+INFO: [Synth 8-638] synthesizing module 'base_m00_regslice_32' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/synth_1/.Xil/Vivado-7784-Osher/realtime/base_m00_regslice_32_stub.vhdl:51]
+INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_7VXYTM' (1#1) [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/synth/base.vhd:1706]
+INFO: [Synth 8-638] synthesizing module 'm01_couplers_imp_ZWEDQ4' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/synth/base.vhd:2463]
+INFO: [Synth 8-3491] module 'base_auto_pc_1' declared at 'C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/synth_1/.Xil/Vivado-7784-Osher/realtime/base_auto_pc_1_stub.vhdl:5' bound to instance 'auto_pc' of component 'base_auto_pc_1' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/synth/base.vhd:2714]
+INFO: [Synth 8-638] synthesizing module 'base_auto_pc_1' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/synth_1/.Xil/Vivado-7784-Osher/realtime/base_auto_pc_1_stub.vhdl:71]
+INFO: [Synth 8-3491] module 'base_m01_regslice_32' declared at 'C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/synth_1/.Xil/Vivado-7784-Osher/realtime/base_m01_regslice_32_stub.vhdl:5' bound to instance 'm01_regslice' of component 'base_m01_regslice_32' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/synth/base.vhd:2777]
+INFO: [Synth 8-638] synthesizing module 'base_m01_regslice_32' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/synth_1/.Xil/Vivado-7784-Osher/realtime/base_m01_regslice_32_stub.vhdl:51]
+INFO: [Synth 8-256] done synthesizing module 'm01_couplers_imp_ZWEDQ4' (2#1) [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/synth/base.vhd:2463]
+INFO: [Synth 8-638] synthesizing module 'm02_couplers_imp_1Y7ASDJ' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/synth/base.vhd:2912]
+INFO: [Synth 8-3491] module 'base_m02_regslice_32' declared at 'C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/synth_1/.Xil/Vivado-7784-Osher/realtime/base_m02_regslice_32_stub.vhdl:5' bound to instance 'm02_regslice' of component 'base_m02_regslice_32' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/synth/base.vhd:3158]
+INFO: [Synth 8-638] synthesizing module 'base_m02_regslice_32' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/synth_1/.Xil/Vivado-7784-Osher/realtime/base_m02_regslice_32_stub.vhdl:91]
+INFO: [Synth 8-256] done synthesizing module 'm02_couplers_imp_1Y7ASDJ' (3#1) [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/synth/base.vhd:2912]
+INFO: [Synth 8-638] synthesizing module 'm03_couplers_imp_QNDXZL' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/synth/base.vhd:3863]
+INFO: [Synth 8-3491] module 'base_auto_pc_2' declared at 'C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/synth_1/.Xil/Vivado-7784-Osher/realtime/base_auto_pc_2_stub.vhdl:5' bound to instance 'auto_pc' of component 'base_auto_pc_2' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/synth/base.vhd:4114]
+INFO: [Synth 8-638] synthesizing module 'base_auto_pc_2' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/synth_1/.Xil/Vivado-7784-Osher/realtime/base_auto_pc_2_stub.vhdl:71]
+INFO: [Synth 8-3491] module 'base_m03_regslice_30' declared at 'C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/synth_1/.Xil/Vivado-7784-Osher/realtime/base_m03_regslice_30_stub.vhdl:5' bound to instance 'm03_regslice' of component 'base_m03_regslice_30' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/synth/base.vhd:4177]
+INFO: [Synth 8-638] synthesizing module 'base_m03_regslice_30' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/synth_1/.Xil/Vivado-7784-Osher/realtime/base_m03_regslice_30_stub.vhdl:51]
+INFO: [Synth 8-256] done synthesizing module 'm03_couplers_imp_QNDXZL' (4#1) [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/synth/base.vhd:3863]
+INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_1OPDNLR' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/synth/base.vhd:5839]
+INFO: [Synth 8-3491] module 'base_auto_pc_3' declared at 'C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/synth_1/.Xil/Vivado-7784-Osher/realtime/base_auto_pc_3_stub.vhdl:5' bound to instance 'auto_pc' of component 'base_auto_pc_3' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/synth/base.vhd:6200]
+INFO: [Synth 8-638] synthesizing module 'base_auto_pc_3' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/synth_1/.Xil/Vivado-7784-Osher/realtime/base_auto_pc_3_stub.vhdl:90]
+INFO: [Synth 8-3491] module 'base_s00_regslice_32' declared at 'C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/synth_1/.Xil/Vivado-7784-Osher/realtime/base_s00_regslice_32_stub.vhdl:5' bound to instance 's00_regslice' of component 'base_s00_regslice_32' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/synth/base.vhd:6282]
+INFO: [Synth 8-638] synthesizing module 'base_s00_regslice_32' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/synth_1/.Xil/Vivado-7784-Osher/realtime/base_s00_regslice_32_stub.vhdl:89]
+INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_1OPDNLR' (5#1) [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/synth/base.vhd:5839]
+INFO: [Synth 8-3491] module 'base_xbar_7' declared at 'C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/synth_1/.Xil/Vivado-7784-Osher/realtime/base_xbar_7_stub.vhdl:5' bound to instance 'xbar' of component 'base_xbar_7' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/synth/base.vhd:10572]
+INFO: [Synth 8-638] synthesizing module 'base_xbar_7' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/synth_1/.Xil/Vivado-7784-Osher/realtime/base_xbar_7_stub.vhdl:89]
+INFO: [Synth 8-256] done synthesizing module 'base_ps7_0_axi_periph1_0' (6#1) [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/synth/base.vhd:9662]
+INFO: [Synth 8-3491] module 'base_rst_ps7_0_fclk0_0' declared at 'C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/synth_1/.Xil/Vivado-7784-Osher/realtime/base_rst_ps7_0_fclk0_0_stub.vhdl:5' bound to instance 'rst_ps7_0_fclk0' of component 'base_rst_ps7_0_fclk0_0' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/synth/base.vhd:14363]
+INFO: [Synth 8-638] synthesizing module 'base_rst_ps7_0_fclk0_0' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/synth_1/.Xil/Vivado-7784-Osher/realtime/base_rst_ps7_0_fclk0_0_stub.vhdl:21]
+INFO: [Synth 8-3491] module 'base_rst_ps7_0_fclk1_0' declared at 'C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/synth_1/.Xil/Vivado-7784-Osher/realtime/base_rst_ps7_0_fclk1_0_stub.vhdl:5' bound to instance 'rst_ps7_0_fclk1' of component 'base_rst_ps7_0_fclk1_0' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/synth/base.vhd:14376]
+INFO: [Synth 8-638] synthesizing module 'base_rst_ps7_0_fclk1_0' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/synth_1/.Xil/Vivado-7784-Osher/realtime/base_rst_ps7_0_fclk1_0_stub.vhdl:21]
+INFO: [Synth 8-3491] module 'base_smartconnect_0_0' declared at 'C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/synth_1/.Xil/Vivado-7784-Osher/realtime/base_smartconnect_0_0_stub.vhdl:5' bound to instance 'smartconnect_0' of component 'base_smartconnect_0_0' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/synth/base.vhd:14389]
+INFO: [Synth 8-638] synthesizing module 'base_smartconnect_0_0' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/synth_1/.Xil/Vivado-7784-Osher/realtime/base_smartconnect_0_0_stub.vhdl:79]
+INFO: [Synth 8-3491] module 'base_system_interrupts_0' declared at 'C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/synth_1/.Xil/Vivado-7784-Osher/realtime/base_system_interrupts_0_stub.vhdl:5' bound to instance 'system_interrupts' of component 'base_system_interrupts_0' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/synth/base.vhd:14460]
+INFO: [Synth 8-638] synthesizing module 'base_system_interrupts_0' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/synth_1/.Xil/Vivado-7784-Osher/realtime/base_system_interrupts_0_stub.vhdl:32]
+INFO: [Synth 8-3491] module 'base_axi_gpio_0_0' declared at 'C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/synth_1/.Xil/Vivado-7784-Osher/realtime/base_axi_gpio_0_0_stub.vhdl:5' bound to instance 'threshold' of component 'base_axi_gpio_0_0' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/synth/base.vhd:14484]
+INFO: [Synth 8-638] synthesizing module 'base_axi_gpio_0_0' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/synth_1/.Xil/Vivado-7784-Osher/realtime/base_axi_gpio_0_0_stub.vhdl:31]
+INFO: [Synth 8-638] synthesizing module 'video_imp_1KRFORE' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/synth/base.vhd:12002]
+INFO: [Synth 8-638] synthesizing module 'base_axi_interconnect_0_1' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/synth/base.vhd:7410]
+INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_1FYRJNX' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/synth/base.vhd:1055]
+INFO: [Synth 8-3491] module 'base_m00_regslice_33' declared at 'C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/synth_1/.Xil/Vivado-7784-Osher/realtime/base_m00_regslice_33_stub.vhdl:5' bound to instance 'm00_regslice' of component 'base_m00_regslice_33' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/synth/base.vhd:1178]
+INFO: [Synth 8-638] synthesizing module 'base_m00_regslice_33' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/synth_1/.Xil/Vivado-7784-Osher/realtime/base_m00_regslice_33_stub.vhdl:51]
+INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_1FYRJNX' (7#1) [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/synth/base.vhd:1055]
+INFO: [Synth 8-638] synthesizing module 'm01_couplers_imp_AMBB5N' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/synth/base.vhd:2112]
+INFO: [Synth 8-3491] module 'base_auto_cc_0' declared at 'C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/synth_1/.Xil/Vivado-7784-Osher/realtime/base_auto_cc_0_stub.vhdl:5' bound to instance 'auto_cc' of component 'base_auto_cc_0' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/synth/base.vhd:2305]
+INFO: [Synth 8-638] synthesizing module 'base_auto_cc_0' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/synth_1/.Xil/Vivado-7784-Osher/realtime/base_auto_cc_0_stub.vhdl:53]
+INFO: [Synth 8-3491] module 'base_m01_regslice_33' declared at 'C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/synth_1/.Xil/Vivado-7784-Osher/realtime/base_m01_regslice_33_stub.vhdl:5' bound to instance 'm01_regslice' of component 'base_m01_regslice_33' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/synth/base.vhd:2350]
+INFO: [Synth 8-638] synthesizing module 'base_m01_regslice_33' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/synth_1/.Xil/Vivado-7784-Osher/realtime/base_m01_regslice_33_stub.vhdl:51]
+INFO: [Synth 8-256] done synthesizing module 'm01_couplers_imp_AMBB5N' (8#1) [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/synth/base.vhd:2112]
+INFO: [Synth 8-638] synthesizing module 'm02_couplers_imp_P0IUHS' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/synth/base.vhd:3291]
+INFO: [Synth 8-3491] module 'base_auto_cc_1' declared at 'C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/synth_1/.Xil/Vivado-7784-Osher/realtime/base_auto_cc_1_stub.vhdl:5' bound to instance 'auto_cc' of component 'base_auto_cc_1' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/synth/base.vhd:3484]
+INFO: [Synth 8-638] synthesizing module 'base_auto_cc_1' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/synth_1/.Xil/Vivado-7784-Osher/realtime/base_auto_cc_1_stub.vhdl:53]
+INFO: [Synth 8-3491] module 'base_m02_regslice_33' declared at 'C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/synth_1/.Xil/Vivado-7784-Osher/realtime/base_m02_regslice_33_stub.vhdl:5' bound to instance 'm02_regslice' of component 'base_m02_regslice_33' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/synth/base.vhd:3529]
+INFO: [Synth 8-638] synthesizing module 'base_m02_regslice_33' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/synth_1/.Xil/Vivado-7784-Osher/realtime/base_m02_regslice_33_stub.vhdl:51]
+INFO: [Synth 8-256] done synthesizing module 'm02_couplers_imp_P0IUHS' (9#1) [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/synth/base.vhd:3291]
+INFO: [Synth 8-638] synthesizing module 'm03_couplers_imp_1J9C68M' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/synth/base.vhd:3624]
+INFO: [Synth 8-3491] module 'base_m03_regslice_31' declared at 'C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/synth_1/.Xil/Vivado-7784-Osher/realtime/base_m03_regslice_31_stub.vhdl:5' bound to instance 'm03_regslice' of component 'base_m03_regslice_31' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/synth/base.vhd:3750]
+INFO: [Synth 8-638] synthesizing module 'base_m03_regslice_31' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/synth_1/.Xil/Vivado-7784-Osher/realtime/base_m03_regslice_31_stub.vhdl:51]
+INFO: [Synth 8-256] done synthesizing module 'm03_couplers_imp_1J9C68M' (10#1) [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/synth/base.vhd:3624]
+INFO: [Synth 8-638] synthesizing module 'm04_couplers_imp_19743FA' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/synth/base.vhd:4270]
+INFO: [Synth 8-3491] module 'base_m04_regslice_0' declared at 'C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/synth_1/.Xil/Vivado-7784-Osher/realtime/base_m04_regslice_0_stub.vhdl:5' bound to instance 'm04_regslice' of component 'base_m04_regslice_0' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/synth/base.vhd:4394]
+INFO: [Synth 8-638] synthesizing module 'base_m04_regslice_0' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/synth_1/.Xil/Vivado-7784-Osher/realtime/base_m04_regslice_0_stub.vhdl:51]
+INFO: [Synth 8-256] done synthesizing module 'm04_couplers_imp_19743FA' (11#1) [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/synth/base.vhd:4270]
+INFO: [Synth 8-638] synthesizing module 'm05_couplers_imp_HQG6QO' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/synth/base.vhd:4487]
+INFO: [Synth 8-3491] module 'base_m05_regslice_0' declared at 'C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/synth_1/.Xil/Vivado-7784-Osher/realtime/base_m05_regslice_0_stub.vhdl:5' bound to instance 'm05_regslice' of component 'base_m05_regslice_0' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/synth/base.vhd:4611]
+INFO: [Synth 8-638] synthesizing module 'base_m05_regslice_0' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/synth_1/.Xil/Vivado-7784-Osher/realtime/base_m05_regslice_0_stub.vhdl:51]
+INFO: [Synth 8-256] done synthesizing module 'm05_couplers_imp_HQG6QO' (12#1) [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/synth/base.vhd:4487]
+INFO: [Synth 8-638] synthesizing module 'm06_couplers_imp_IQPA7V' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/synth/base.vhd:4704]
+INFO: [Synth 8-3491] module 'base_auto_cc_2' declared at 'C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/synth_1/.Xil/Vivado-7784-Osher/realtime/base_auto_cc_2_stub.vhdl:5' bound to instance 'auto_cc' of component 'base_auto_cc_2' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/synth/base.vhd:4897]
+INFO: [Synth 8-638] synthesizing module 'base_auto_cc_2' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/synth_1/.Xil/Vivado-7784-Osher/realtime/base_auto_cc_2_stub.vhdl:53]
+INFO: [Synth 8-3491] module 'base_m06_regslice_0' declared at 'C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/synth_1/.Xil/Vivado-7784-Osher/realtime/base_m06_regslice_0_stub.vhdl:5' bound to instance 'm06_regslice' of component 'base_m06_regslice_0' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/synth/base.vhd:4942]
+INFO: [Synth 8-638] synthesizing module 'base_m06_regslice_0' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/synth_1/.Xil/Vivado-7784-Osher/realtime/base_m06_regslice_0_stub.vhdl:51]
+INFO: [Synth 8-256] done synthesizing module 'm06_couplers_imp_IQPA7V' (13#1) [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/synth/base.vhd:4704]
+INFO: [Synth 8-638] synthesizing module 'm07_couplers_imp_1PQNA19' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/synth/base.vhd:5035]
+INFO: [Synth 8-3491] module 'base_auto_cc_3' declared at 'C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/synth_1/.Xil/Vivado-7784-Osher/realtime/base_auto_cc_3_stub.vhdl:5' bound to instance 'auto_cc' of component 'base_auto_cc_3' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/synth/base.vhd:5228]
+INFO: [Synth 8-638] synthesizing module 'base_auto_cc_3' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/synth_1/.Xil/Vivado-7784-Osher/realtime/base_auto_cc_3_stub.vhdl:53]
+INFO: [Synth 8-3491] module 'base_m07_regslice_0' declared at 'C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/synth_1/.Xil/Vivado-7784-Osher/realtime/base_m07_regslice_0_stub.vhdl:5' bound to instance 'm07_regslice' of component 'base_m07_regslice_0' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/synth/base.vhd:5273]
+INFO: [Synth 8-638] synthesizing module 'base_m07_regslice_0' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/synth_1/.Xil/Vivado-7784-Osher/realtime/base_m07_regslice_0_stub.vhdl:51]
+INFO: [Synth 8-256] done synthesizing module 'm07_couplers_imp_1PQNA19' (14#1) [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/synth/base.vhd:5035]
+INFO: [Synth 8-638] synthesizing module 'm08_couplers_imp_11R48SB' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/synth/base.vhd:5366]
+INFO: [Synth 8-3491] module 'base_m08_regslice_0' declared at 'C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/synth_1/.Xil/Vivado-7784-Osher/realtime/base_m08_regslice_0_stub.vhdl:5' bound to instance 'm08_regslice' of component 'base_m08_regslice_0' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/synth/base.vhd:5490]
+INFO: [Synth 8-638] synthesizing module 'base_m08_regslice_0' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/synth_1/.Xil/Vivado-7784-Osher/realtime/base_m08_regslice_0_stub.vhdl:51]
+INFO: [Synth 8-256] done synthesizing module 'm08_couplers_imp_11R48SB' (15#1) [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/synth/base.vhd:5366]
+INFO: [Synth 8-638] synthesizing module 'm09_couplers_imp_5UZHFX' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/synth/base.vhd:5583]
+INFO: [Synth 8-3491] module 'base_m09_regslice_0' declared at 'C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/synth_1/.Xil/Vivado-7784-Osher/realtime/base_m09_regslice_0_stub.vhdl:5' bound to instance 'm09_regslice' of component 'base_m09_regslice_0' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/synth/base.vhd:5707]
+INFO: [Synth 8-638] synthesizing module 'base_m09_regslice_0' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/synth_1/.Xil/Vivado-7784-Osher/realtime/base_m09_regslice_0_stub.vhdl:51]
+INFO: [Synth 8-256] done synthesizing module 'm09_couplers_imp_5UZHFX' (16#1) [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/synth/base.vhd:5583]
+INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_YXTABC' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/synth/base.vhd:6531]
+INFO: [Synth 8-3491] module 'base_auto_pc_4' declared at 'C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/synth_1/.Xil/Vivado-7784-Osher/realtime/base_auto_pc_4_stub.vhdl:5' bound to instance 'auto_pc' of component 'base_auto_pc_4' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/synth/base.vhd:6840]
+INFO: [Synth 8-638] synthesizing module 'base_auto_pc_4' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/synth_1/.Xil/Vivado-7784-Osher/realtime/base_auto_pc_4_stub.vhdl:71]
+INFO: [Synth 8-3491] module 'base_s00_regslice_33' declared at 'C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/synth_1/.Xil/Vivado-7784-Osher/realtime/base_s00_regslice_33_stub.vhdl:5' bound to instance 's00_regslice' of component 'base_s00_regslice_33' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/synth/base.vhd:6903]
+INFO: [Synth 8-638] synthesizing module 'base_s00_regslice_33' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/synth_1/.Xil/Vivado-7784-Osher/realtime/base_s00_regslice_33_stub.vhdl:91]
+INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_YXTABC' (17#1) [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/synth/base.vhd:6531]
+INFO: [Synth 8-3491] module 'base_xbar_9' declared at 'C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/synth_1/.Xil/Vivado-7784-Osher/realtime/base_xbar_9_stub.vhdl:5' bound to instance 'xbar' of component 'base_xbar_9' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/synth/base.vhd:8629]
+INFO: [Synth 8-638] synthesizing module 'base_xbar_9' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/synth_1/.Xil/Vivado-7784-Osher/realtime/base_xbar_9_stub.vhdl:51]
+INFO: [Synth 8-256] done synthesizing module 'base_axi_interconnect_0_1' (18#1) [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/synth/base.vhd:7410]
+INFO: [Synth 8-638] synthesizing module 'base_axi_mem_intercon_1' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/synth/base.vhd:8928]
+INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_1UNZW92' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/synth/base.vhd:1312]
+INFO: [Synth 8-3491] module 'base_auto_pc_5' declared at 'C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/synth_1/.Xil/Vivado-7784-Osher/realtime/base_auto_pc_5_stub.vhdl:5' bound to instance 'auto_pc' of component 'base_auto_pc_5' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/synth/base.vhd:1555]
+INFO: [Synth 8-638] synthesizing module 'base_auto_pc_5' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/synth_1/.Xil/Vivado-7784-Osher/realtime/base_auto_pc_5_stub.vhdl:90]
+INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_1UNZW92' (19#1) [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/synth/base.vhd:1312]
+INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_F85G6R' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/synth/base.vhd:6409]
+INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_F85G6R' (20#1) [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/synth/base.vhd:6409]
+INFO: [Synth 8-638] synthesizing module 's01_couplers_imp_1BPETZ9' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/synth/base.vhd:7028]
+INFO: [Synth 8-3491] module 'base_auto_us_0' declared at 'C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/synth_1/.Xil/Vivado-7784-Osher/realtime/base_auto_us_0_stub.vhdl:5' bound to instance 'auto_us' of component 'base_auto_us_0' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/synth/base.vhd:7129]
+INFO: [Synth 8-638] synthesizing module 'base_auto_us_0' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/synth_1/.Xil/Vivado-7784-Osher/realtime/base_auto_us_0_stub.vhdl:45]
+INFO: [Synth 8-256] done synthesizing module 's01_couplers_imp_1BPETZ9' (21#1) [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/synth/base.vhd:7028]
+INFO: [Synth 8-3491] module 'base_xbar_10' declared at 'C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/synth_1/.Xil/Vivado-7784-Osher/realtime/base_xbar_10_stub.vhdl:5' bound to instance 'xbar' of component 'base_xbar_10' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/synth/base.vhd:9401]
+INFO: [Synth 8-638] synthesizing module 'base_xbar_10' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/synth_1/.Xil/Vivado-7784-Osher/realtime/base_xbar_10_stub.vhdl:89]
+INFO: [Synth 8-256] done synthesizing module 'base_axi_mem_intercon_1' (22#1) [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/synth/base.vhd:8928]
+INFO: [Synth 8-3491] module 'base_axi_vdma_0' declared at 'C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/synth_1/.Xil/Vivado-7784-Osher/realtime/base_axi_vdma_0_stub.vhdl:5' bound to instance 'axi_vdma' of component 'base_axi_vdma_0' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/synth/base.vhd:12845]
+INFO: [Synth 8-638] synthesizing module 'base_axi_vdma_0' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/synth_1/.Xil/Vivado-7784-Osher/realtime/base_axi_vdma_0_stub.vhdl:78]
+INFO: [Synth 8-638] synthesizing module 'hdmi_in_imp_1J5I8O' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/synth/base.vhd:10875]
+INFO: [Synth 8-3491] module 'base_axis_register_slice_0_0' declared at 'C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/synth_1/.Xil/Vivado-7784-Osher/realtime/base_axis_register_slice_0_0_stub.vhdl:5' bound to instance 'axis_register_slice_0' of component 'base_axis_register_slice_0_0' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/synth/base.vhd:11168]
+INFO: [Synth 8-638] synthesizing module 'base_axis_register_slice_0_0' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/synth_1/.Xil/Vivado-7784-Osher/realtime/base_axis_register_slice_0_0_stub.vhdl:23]
+INFO: [Synth 8-3491] module 'base_color_convert_0' declared at 'C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/synth_1/.Xil/Vivado-7784-Osher/realtime/base_color_convert_0_stub.vhdl:5' bound to instance 'color_convert' of component 'base_color_convert_0' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/synth/base.vhd:11183]
+INFO: [Synth 8-638] synthesizing module 'base_color_convert_0' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/synth_1/.Xil/Vivado-7784-Osher/realtime/base_color_convert_0_stub.vhdl:42]
+INFO: [Synth 8-638] synthesizing module 'frontend_imp_13KUJBY' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/synth/base.vhd:79]
+INFO: [Synth 8-3491] module 'base_axi_gpio_hdmiin_0' declared at 'C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/synth_1/.Xil/Vivado-7784-Osher/realtime/base_axi_gpio_hdmiin_0_stub.vhdl:5' bound to instance 'axi_gpio_hdmiin' of component 'base_axi_gpio_hdmiin_0' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/synth/base.vhd:345]
+INFO: [Synth 8-638] synthesizing module 'base_axi_gpio_hdmiin_0' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/synth_1/.Xil/Vivado-7784-Osher/realtime/base_axi_gpio_hdmiin_0_stub.vhdl:33]
+INFO: [Synth 8-3491] module 'base_color_swap_0_0' declared at 'C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/synth_1/.Xil/Vivado-7784-Osher/realtime/base_color_swap_0_0_stub.vhdl:5' bound to instance 'color_swap_0' of component 'base_color_swap_0_0' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/synth/base.vhd:370]
+INFO: [Synth 8-638] synthesizing module 'base_color_swap_0_0' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/synth_1/.Xil/Vivado-7784-Osher/realtime/base_color_swap_0_0_stub.vhdl:19]
+INFO: [Synth 8-3491] module 'base_dvi2rgb_0_0' declared at 'C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/synth_1/.Xil/Vivado-7784-Osher/realtime/base_dvi2rgb_0_0_stub.vhdl:5' bound to instance 'dvi2rgb_0' of component 'base_dvi2rgb_0_0' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/synth/base.vhd:381]
+INFO: [Synth 8-638] synthesizing module 'base_dvi2rgb_0_0' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/synth_1/.Xil/Vivado-7784-Osher/realtime/base_dvi2rgb_0_0_stub.vhdl:30]
+INFO: [Synth 8-3491] module 'base_v_vid_in_axi4s_0_0' declared at 'C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/synth_1/.Xil/Vivado-7784-Osher/realtime/base_v_vid_in_axi4s_0_0_stub.vhdl:5' bound to instance 'v_vid_in_axi4s_0' of component 'base_v_vid_in_axi4s_0_0' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/synth/base.vhd:403]
+INFO: [Synth 8-638] synthesizing module 'base_v_vid_in_axi4s_0_0' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/synth_1/.Xil/Vivado-7784-Osher/realtime/base_v_vid_in_axi4s_0_0_stub.vhdl:39]
+INFO: [Synth 8-3491] module 'base_vtc_in_0' declared at 'C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/synth_1/.Xil/Vivado-7784-Osher/realtime/base_vtc_in_0_stub.vhdl:5' bound to instance 'vtc_in' of component 'base_vtc_in_0' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/synth/base.vhd:434]
+INFO: [Synth 8-638] synthesizing module 'base_vtc_in_0' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/synth_1/.Xil/Vivado-7784-Osher/realtime/base_vtc_in_0_stub.vhdl:40]
+INFO: [Synth 8-256] done synthesizing module 'frontend_imp_13KUJBY' (23#1) [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/synth/base.vhd:79]
+INFO: [Synth 8-3491] module 'base_pixel_pack_0' declared at 'C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/synth_1/.Xil/Vivado-7784-Osher/realtime/base_pixel_pack_0_stub.vhdl:5' bound to instance 'pixel_pack' of component 'base_pixel_pack_0' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/synth/base.vhd:11280]
+INFO: [Synth 8-638] synthesizing module 'base_pixel_pack_0' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/synth_1/.Xil/Vivado-7784-Osher/realtime/base_pixel_pack_0_stub.vhdl:42]
+INFO: [Synth 8-256] done synthesizing module 'hdmi_in_imp_1J5I8O' (24#1) [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/synth/base.vhd:10875]
+INFO: [Synth 8-638] synthesizing module 'hdmi_out_imp_1RSCXJD' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/synth/base.vhd:11427]
+INFO: [Synth 8-3491] module 'base_axis_register_slice_0_1' declared at 'C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/synth_1/.Xil/Vivado-7784-Osher/realtime/base_axis_register_slice_0_1_stub.vhdl:5' bound to instance 'axis_register_slice_0' of component 'base_axis_register_slice_0_1' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/synth/base.vhd:11736]
+INFO: [Synth 8-638] synthesizing module 'base_axis_register_slice_0_1' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/synth_1/.Xil/Vivado-7784-Osher/realtime/base_axis_register_slice_0_1_stub.vhdl:23]
+INFO: [Synth 8-3491] module 'base_color_convert_1' declared at 'C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/synth_1/.Xil/Vivado-7784-Osher/realtime/base_color_convert_1_stub.vhdl:5' bound to instance 'color_convert' of component 'base_color_convert_1' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/synth/base.vhd:11751]
+INFO: [Synth 8-638] synthesizing module 'base_color_convert_1' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/synth_1/.Xil/Vivado-7784-Osher/realtime/base_color_convert_1_stub.vhdl:42]
+INFO: [Synth 8-638] synthesizing module 'frontend_imp_1JYZ9V6' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/synth/base.vhd:544]
+INFO: [Synth 8-3491] module 'base_axi_dynclk_0' declared at 'C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/synth_1/.Xil/Vivado-7784-Osher/realtime/base_axi_dynclk_0_stub.vhdl:5' bound to instance 'axi_dynclk' of component 'base_axi_dynclk_0' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/synth/base.vhd:860]
+INFO: [Synth 8-638] synthesizing module 'base_axi_dynclk_0' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/synth_1/.Xil/Vivado-7784-Osher/realtime/base_axi_dynclk_0_stub.vhdl:36]
+INFO: [Synth 8-3491] module 'base_color_swap_0_1' declared at 'C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/synth_1/.Xil/Vivado-7784-Osher/realtime/base_color_swap_0_1_stub.vhdl:5' bound to instance 'color_swap_0' of component 'base_color_swap_0_1' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/synth/base.vhd:888]
+INFO: [Synth 8-638] synthesizing module 'base_color_swap_0_1' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/synth_1/.Xil/Vivado-7784-Osher/realtime/base_color_swap_0_1_stub.vhdl:19]
+INFO: [Synth 8-3491] module 'base_hdmi_out_hpd_video_0' declared at 'C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/synth_1/.Xil/Vivado-7784-Osher/realtime/base_hdmi_out_hpd_video_0_stub.vhdl:5' bound to instance 'hdmi_out_hpd_video' of component 'base_hdmi_out_hpd_video_0' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/synth/base.vhd:899]
+INFO: [Synth 8-638] synthesizing module 'base_hdmi_out_hpd_video_0' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/synth_1/.Xil/Vivado-7784-Osher/realtime/base_hdmi_out_hpd_video_0_stub.vhdl:32]
+INFO: [Synth 8-3491] module 'base_rgb2dvi_0_0' declared at 'C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/synth_1/.Xil/Vivado-7784-Osher/realtime/base_rgb2dvi_0_0_stub.vhdl:5' bound to instance 'rgb2dvi_0' of component 'base_rgb2dvi_0_0' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/synth/base.vhd:923]
+INFO: [Synth 8-638] synthesizing module 'base_rgb2dvi_0_0' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/synth_1/.Xil/Vivado-7784-Osher/realtime/base_rgb2dvi_0_0_stub.vhdl:22]
+INFO: [Synth 8-3491] module 'base_v_axi4s_vid_out_0_0' declared at 'C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/synth_1/.Xil/Vivado-7784-Osher/realtime/base_v_axi4s_vid_out_0_0_stub.vhdl:5' bound to instance 'v_axi4s_vid_out_0' of component 'base_v_axi4s_vid_out_0_0' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/synth/base.vhd:937]
+INFO: [Synth 8-638] synthesizing module 'base_v_axi4s_vid_out_0_0' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/synth_1/.Xil/Vivado-7784-Osher/realtime/base_v_axi4s_vid_out_0_0_stub.vhdl:42]
+INFO: [Synth 8-3491] module 'base_vtc_out_0' declared at 'C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/synth_1/.Xil/Vivado-7784-Osher/realtime/base_vtc_out_0_stub.vhdl:5' bound to instance 'vtc_out' of component 'base_vtc_out_0' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/synth/base.vhd:971]
+INFO: [Synth 8-638] synthesizing module 'base_vtc_out_0' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/synth_1/.Xil/Vivado-7784-Osher/realtime/base_vtc_out_0_stub.vhdl:43]
+INFO: [Synth 8-256] done synthesizing module 'frontend_imp_1JYZ9V6' (25#1) [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/synth/base.vhd:544]
+INFO: [Synth 8-3491] module 'base_pixel_unpack_0' declared at 'C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/synth_1/.Xil/Vivado-7784-Osher/realtime/base_pixel_unpack_0_stub.vhdl:5' bound to instance 'pixel_unpack' of component 'base_pixel_unpack_0' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/synth/base.vhd:11856]
+INFO: [Synth 8-638] synthesizing module 'base_pixel_unpack_0' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/synth_1/.Xil/Vivado-7784-Osher/realtime/base_pixel_unpack_0_stub.vhdl:42]
+INFO: [Synth 8-256] done synthesizing module 'hdmi_out_imp_1RSCXJD' (26#1) [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/synth/base.vhd:11427]
+INFO: [Synth 8-3491] module 'base_proc_sys_reset_pixelclk_0' declared at 'C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/synth_1/.Xil/Vivado-7784-Osher/realtime/base_proc_sys_reset_pixelclk_0_stub.vhdl:5' bound to instance 'proc_sys_reset_pixelclk' of component 'base_proc_sys_reset_pixelclk_0' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/synth/base.vhd:13119]
+INFO: [Synth 8-638] synthesizing module 'base_proc_sys_reset_pixelclk_0' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/synth_1/.Xil/Vivado-7784-Osher/realtime/base_proc_sys_reset_pixelclk_0_stub.vhdl:21]
+INFO: [Synth 8-3491] module 'base_xlconcat_0_0' declared at 'c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_xlconcat_0_0/synth/base_xlconcat_0_0.v:58' bound to instance 'xlconcat_0' of component 'base_xlconcat_0_0' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/synth/base.vhd:13132]
+INFO: [Synth 8-6157] synthesizing module 'base_xlconcat_0_0' [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_xlconcat_0_0/synth/base_xlconcat_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_3_xlconcat' [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ipshared/442e/hdl/xlconcat_v2_1_vl_rfs.v:14]
+	Parameter IN0_WIDTH bound to: 1 - type: integer 
+	Parameter IN1_WIDTH bound to: 1 - type: integer 
+	Parameter IN2_WIDTH bound to: 1 - type: integer 
+	Parameter IN3_WIDTH bound to: 1 - type: integer 
+	Parameter IN4_WIDTH bound to: 1 - type: integer 
+	Parameter IN5_WIDTH bound to: 1 - type: integer 
+	Parameter IN6_WIDTH bound to: 1 - type: integer 
+	Parameter IN7_WIDTH bound to: 1 - type: integer 
+	Parameter IN8_WIDTH bound to: 1 - type: integer 
+	Parameter IN9_WIDTH bound to: 1 - type: integer 
+	Parameter IN10_WIDTH bound to: 1 - type: integer 
+	Parameter IN11_WIDTH bound to: 1 - type: integer 
+	Parameter IN12_WIDTH bound to: 1 - type: integer 
+	Parameter IN13_WIDTH bound to: 1 - type: integer 
+	Parameter IN14_WIDTH bound to: 1 - type: integer 
+	Parameter IN15_WIDTH bound to: 1 - type: integer 
+	Parameter IN16_WIDTH bound to: 1 - type: integer 
+	Parameter IN17_WIDTH bound to: 1 - type: integer 
+	Parameter IN18_WIDTH bound to: 1 - type: integer 
+	Parameter IN19_WIDTH bound to: 1 - type: integer 
+	Parameter IN20_WIDTH bound to: 1 - type: integer 
+	Parameter IN21_WIDTH bound to: 1 - type: integer 
+	Parameter IN22_WIDTH bound to: 1 - type: integer 
+	Parameter IN23_WIDTH bound to: 1 - type: integer 
+	Parameter IN24_WIDTH bound to: 1 - type: integer 
+	Parameter IN25_WIDTH bound to: 1 - type: integer 
+	Parameter IN26_WIDTH bound to: 1 - type: integer 
+	Parameter IN27_WIDTH bound to: 1 - type: integer 
+	Parameter IN28_WIDTH bound to: 1 - type: integer 
+	Parameter IN29_WIDTH bound to: 1 - type: integer 
+	Parameter IN30_WIDTH bound to: 1 - type: integer 
+	Parameter IN31_WIDTH bound to: 1 - type: integer 
+	Parameter dout_width bound to: 6 - type: integer 
+	Parameter NUM_PORTS bound to: 6 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_3_xlconcat' (27#1) [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ipshared/442e/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'base_xlconcat_0_0' (28#1) [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_xlconcat_0_0/synth/base_xlconcat_0_0.v:58]
+INFO: [Synth 8-256] done synthesizing module 'video_imp_1KRFORE' (29#1) [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/synth/base.vhd:12002]
+INFO: [Synth 8-3491] module 'base_xlconcat_0_2' declared at 'c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_xlconcat_0_2/synth/base_xlconcat_0_2.v:58' bound to instance 'xlconcat_0' of component 'base_xlconcat_0_2' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/synth/base.vhd:14612]
+INFO: [Synth 8-6157] synthesizing module 'base_xlconcat_0_2' [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_xlconcat_0_2/synth/base_xlconcat_0_2.v:58]
+INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_3_xlconcat__parameterized0' [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ipshared/442e/hdl/xlconcat_v2_1_vl_rfs.v:14]
+	Parameter IN0_WIDTH bound to: 1 - type: integer 
+	Parameter IN1_WIDTH bound to: 1 - type: integer 
+	Parameter IN2_WIDTH bound to: 6 - type: integer 
+	Parameter IN3_WIDTH bound to: 1 - type: integer 
+	Parameter IN4_WIDTH bound to: 1 - type: integer 
+	Parameter IN5_WIDTH bound to: 1 - type: integer 
+	Parameter IN6_WIDTH bound to: 1 - type: integer 
+	Parameter IN7_WIDTH bound to: 1 - type: integer 
+	Parameter IN8_WIDTH bound to: 1 - type: integer 
+	Parameter IN9_WIDTH bound to: 1 - type: integer 
+	Parameter IN10_WIDTH bound to: 1 - type: integer 
+	Parameter IN11_WIDTH bound to: 1 - type: integer 
+	Parameter IN12_WIDTH bound to: 1 - type: integer 
+	Parameter IN13_WIDTH bound to: 1 - type: integer 
+	Parameter IN14_WIDTH bound to: 1 - type: integer 
+	Parameter IN15_WIDTH bound to: 1 - type: integer 
+	Parameter IN16_WIDTH bound to: 1 - type: integer 
+	Parameter IN17_WIDTH bound to: 1 - type: integer 
+	Parameter IN18_WIDTH bound to: 1 - type: integer 
+	Parameter IN19_WIDTH bound to: 1 - type: integer 
+	Parameter IN20_WIDTH bound to: 1 - type: integer 
+	Parameter IN21_WIDTH bound to: 1 - type: integer 
+	Parameter IN22_WIDTH bound to: 1 - type: integer 
+	Parameter IN23_WIDTH bound to: 1 - type: integer 
+	Parameter IN24_WIDTH bound to: 1 - type: integer 
+	Parameter IN25_WIDTH bound to: 1 - type: integer 
+	Parameter IN26_WIDTH bound to: 1 - type: integer 
+	Parameter IN27_WIDTH bound to: 1 - type: integer 
+	Parameter IN28_WIDTH bound to: 1 - type: integer 
+	Parameter IN29_WIDTH bound to: 1 - type: integer 
+	Parameter IN30_WIDTH bound to: 1 - type: integer 
+	Parameter IN31_WIDTH bound to: 1 - type: integer 
+	Parameter dout_width bound to: 8 - type: integer 
+	Parameter NUM_PORTS bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_3_xlconcat__parameterized0' (29#1) [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ipshared/442e/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'base_xlconcat_0_2' (30#1) [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_xlconcat_0_2/synth/base_xlconcat_0_2.v:58]
+INFO: [Synth 8-3491] module 'base_xlconcat_0_3' declared at 'c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_xlconcat_0_3/synth/base_xlconcat_0_3.v:58' bound to instance 'xlconcat_1' of component 'base_xlconcat_0_3' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/synth/base.vhd:14619]
+INFO: [Synth 8-6157] synthesizing module 'base_xlconcat_0_3' [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_xlconcat_0_3/synth/base_xlconcat_0_3.v:58]
+INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_3_xlconcat__parameterized1' [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ipshared/442e/hdl/xlconcat_v2_1_vl_rfs.v:14]
+	Parameter IN0_WIDTH bound to: 1 - type: integer 
+	Parameter IN1_WIDTH bound to: 1 - type: integer 
+	Parameter IN2_WIDTH bound to: 1 - type: integer 
+	Parameter IN3_WIDTH bound to: 1 - type: integer 
+	Parameter IN4_WIDTH bound to: 1 - type: integer 
+	Parameter IN5_WIDTH bound to: 1 - type: integer 
+	Parameter IN6_WIDTH bound to: 1 - type: integer 
+	Parameter IN7_WIDTH bound to: 1 - type: integer 
+	Parameter IN8_WIDTH bound to: 1 - type: integer 
+	Parameter IN9_WIDTH bound to: 1 - type: integer 
+	Parameter IN10_WIDTH bound to: 1 - type: integer 
+	Parameter IN11_WIDTH bound to: 1 - type: integer 
+	Parameter IN12_WIDTH bound to: 1 - type: integer 
+	Parameter IN13_WIDTH bound to: 1 - type: integer 
+	Parameter IN14_WIDTH bound to: 1 - type: integer 
+	Parameter IN15_WIDTH bound to: 1 - type: integer 
+	Parameter IN16_WIDTH bound to: 1 - type: integer 
+	Parameter IN17_WIDTH bound to: 1 - type: integer 
+	Parameter IN18_WIDTH bound to: 1 - type: integer 
+	Parameter IN19_WIDTH bound to: 1 - type: integer 
+	Parameter IN20_WIDTH bound to: 1 - type: integer 
+	Parameter IN21_WIDTH bound to: 1 - type: integer 
+	Parameter IN22_WIDTH bound to: 1 - type: integer 
+	Parameter IN23_WIDTH bound to: 1 - type: integer 
+	Parameter IN24_WIDTH bound to: 1 - type: integer 
+	Parameter IN25_WIDTH bound to: 1 - type: integer 
+	Parameter IN26_WIDTH bound to: 1 - type: integer 
+	Parameter IN27_WIDTH bound to: 1 - type: integer 
+	Parameter IN28_WIDTH bound to: 1 - type: integer 
+	Parameter IN29_WIDTH bound to: 1 - type: integer 
+	Parameter IN30_WIDTH bound to: 1 - type: integer 
+	Parameter IN31_WIDTH bound to: 1 - type: integer 
+	Parameter dout_width bound to: 1 - type: integer 
+	Parameter NUM_PORTS bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_3_xlconcat__parameterized1' (30#1) [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ipshared/442e/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'base_xlconcat_0_3' (31#1) [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_xlconcat_0_3/synth/base_xlconcat_0_3.v:58]
+INFO: [Synth 8-256] done synthesizing module 'base' (32#1) [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/synth/base.vhd:13193]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2020.1/scripts/rt/data/unisim_comp.v:36238' bound to instance 'hdmi_in_ddc_scl_iobuf' of component 'IOBUF' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/hdl/base_wrapper.vhd:149]
+INFO: [Synth 8-6157] synthesizing module 'IOBUF' [C:/Xilinx/Vivado/2020.1/scripts/rt/data/unisim_comp.v:36238]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (33#1) [C:/Xilinx/Vivado/2020.1/scripts/rt/data/unisim_comp.v:36238]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2020.1/scripts/rt/data/unisim_comp.v:36238' bound to instance 'hdmi_in_ddc_sda_iobuf' of component 'IOBUF' [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/hdl/base_wrapper.vhd:156]
+INFO: [Synth 8-256] done synthesizing module 'base_wrapper' (34#1) [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/hdl/base_wrapper.vhd:52]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 1183.277 ; gain = 159.582
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 1183.277 ; gain = 159.582
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 1183.277 ; gain = 159.582
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.087 . Memory (MB): peak = 1183.277 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc] for cell 'base_i/ps7_0'
+WARNING: [Vivado 12-584] No ports matched ''. [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc:2]
+WARNING: [Vivado 12-584] No ports matched ''. [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc:4]
+WARNING: [Vivado 12-584] No ports matched ''. [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc:6]
+Finished Parsing XDC File [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc] for cell 'base_i/ps7_0'
+Parsing XDC File [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_xbar_7/base_xbar_7/base_xbar_7_in_context.xdc] for cell 'base_i/ps7_0_axi_periph1/xbar'
+Finished Parsing XDC File [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_xbar_7/base_xbar_7/base_xbar_7_in_context.xdc] for cell 'base_i/ps7_0_axi_periph1/xbar'
+Parsing XDC File [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_rst_ps7_0_fclk0_0/base_rst_ps7_0_fclk0_0/base_rst_ps7_0_fclk0_0_in_context.xdc] for cell 'base_i/rst_ps7_0_fclk0'
+Finished Parsing XDC File [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_rst_ps7_0_fclk0_0/base_rst_ps7_0_fclk0_0/base_rst_ps7_0_fclk0_0_in_context.xdc] for cell 'base_i/rst_ps7_0_fclk0'
+Parsing XDC File [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_rst_ps7_0_fclk1_0/base_rst_ps7_0_fclk1_0/base_rst_ps7_0_fclk1_0_in_context.xdc] for cell 'base_i/rst_ps7_0_fclk1'
+Finished Parsing XDC File [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_rst_ps7_0_fclk1_0/base_rst_ps7_0_fclk1_0/base_rst_ps7_0_fclk1_0_in_context.xdc] for cell 'base_i/rst_ps7_0_fclk1'
+Parsing XDC File [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_system_interrupts_0/base_system_interrupts_0/base_system_interrupts_0_in_context.xdc] for cell 'base_i/system_interrupts'
+Finished Parsing XDC File [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_system_interrupts_0/base_system_interrupts_0/base_system_interrupts_0_in_context.xdc] for cell 'base_i/system_interrupts'
+Parsing XDC File [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_xbar_9/base_xbar_9/base_xbar_9_in_context.xdc] for cell 'base_i/video/axi_interconnect_0/xbar'
+Finished Parsing XDC File [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_xbar_9/base_xbar_9/base_xbar_9_in_context.xdc] for cell 'base_i/video/axi_interconnect_0/xbar'
+Parsing XDC File [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_xbar_10/base_xbar_10/base_xbar_10_in_context.xdc] for cell 'base_i/video/axi_mem_intercon/xbar'
+Finished Parsing XDC File [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_xbar_10/base_xbar_10/base_xbar_10_in_context.xdc] for cell 'base_i/video/axi_mem_intercon/xbar'
+Parsing XDC File [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_axi_vdma_0/base_axi_vdma_0/base_axi_vdma_0_in_context.xdc] for cell 'base_i/video/axi_vdma'
+Finished Parsing XDC File [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_axi_vdma_0/base_axi_vdma_0/base_axi_vdma_0_in_context.xdc] for cell 'base_i/video/axi_vdma'
+Parsing XDC File [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_axis_register_slice_0_0/base_axis_register_slice_0_0/base_axis_register_slice_0_0_in_context.xdc] for cell 'base_i/video/hdmi_in/axis_register_slice_0'
+Finished Parsing XDC File [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_axis_register_slice_0_0/base_axis_register_slice_0_0/base_axis_register_slice_0_0_in_context.xdc] for cell 'base_i/video/hdmi_in/axis_register_slice_0'
+Parsing XDC File [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_color_convert_0/base_color_convert_0/base_color_convert_0_in_context.xdc] for cell 'base_i/video/hdmi_in/color_convert'
+Finished Parsing XDC File [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_color_convert_0/base_color_convert_0/base_color_convert_0_in_context.xdc] for cell 'base_i/video/hdmi_in/color_convert'
+Parsing XDC File [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_axi_gpio_hdmiin_0/base_axi_gpio_hdmiin_0/base_axi_gpio_hdmiin_0_in_context.xdc] for cell 'base_i/video/hdmi_in/frontend/axi_gpio_hdmiin'
+Finished Parsing XDC File [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_axi_gpio_hdmiin_0/base_axi_gpio_hdmiin_0/base_axi_gpio_hdmiin_0_in_context.xdc] for cell 'base_i/video/hdmi_in/frontend/axi_gpio_hdmiin'
+Parsing XDC File [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_color_swap_0_0/base_color_swap_0_0/base_color_swap_0_0_in_context.xdc] for cell 'base_i/video/hdmi_in/frontend/color_swap_0'
+Finished Parsing XDC File [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_color_swap_0_0/base_color_swap_0_0/base_color_swap_0_0_in_context.xdc] for cell 'base_i/video/hdmi_in/frontend/color_swap_0'
+Parsing XDC File [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_dvi2rgb_0_0/base_dvi2rgb_0_0/base_dvi2rgb_0_0_in_context.xdc] for cell 'base_i/video/hdmi_in/frontend/dvi2rgb_0'
+WARNING: [Vivado 12-584] No ports matched ''. [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_dvi2rgb_0_0/base_dvi2rgb_0_0/base_dvi2rgb_0_0_in_context.xdc:2]
+Finished Parsing XDC File [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_dvi2rgb_0_0/base_dvi2rgb_0_0/base_dvi2rgb_0_0_in_context.xdc] for cell 'base_i/video/hdmi_in/frontend/dvi2rgb_0'
+Parsing XDC File [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_v_vid_in_axi4s_0_0/base_v_vid_in_axi4s_0_0/base_v_vid_in_axi4s_0_0_in_context.xdc] for cell 'base_i/video/hdmi_in/frontend/v_vid_in_axi4s_0'
+Finished Parsing XDC File [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_v_vid_in_axi4s_0_0/base_v_vid_in_axi4s_0_0/base_v_vid_in_axi4s_0_0_in_context.xdc] for cell 'base_i/video/hdmi_in/frontend/v_vid_in_axi4s_0'
+Parsing XDC File [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_vtc_in_0/base_vtc_in_0/base_vtc_in_0_in_context.xdc] for cell 'base_i/video/hdmi_in/frontend/vtc_in'
+Finished Parsing XDC File [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_vtc_in_0/base_vtc_in_0/base_vtc_in_0_in_context.xdc] for cell 'base_i/video/hdmi_in/frontend/vtc_in'
+Parsing XDC File [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_pixel_pack_0/base_pixel_pack_0/base_pixel_pack_0_in_context.xdc] for cell 'base_i/video/hdmi_in/pixel_pack'
+Finished Parsing XDC File [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_pixel_pack_0/base_pixel_pack_0/base_pixel_pack_0_in_context.xdc] for cell 'base_i/video/hdmi_in/pixel_pack'
+Parsing XDC File [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_axis_register_slice_0_1/base_axis_register_slice_0_1/base_axis_register_slice_0_0_in_context.xdc] for cell 'base_i/video/hdmi_out/axis_register_slice_0'
+Finished Parsing XDC File [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_axis_register_slice_0_1/base_axis_register_slice_0_1/base_axis_register_slice_0_0_in_context.xdc] for cell 'base_i/video/hdmi_out/axis_register_slice_0'
+Parsing XDC File [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_color_convert_1/base_color_convert_1/base_color_convert_0_in_context.xdc] for cell 'base_i/video/hdmi_out/color_convert'
+Finished Parsing XDC File [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_color_convert_1/base_color_convert_1/base_color_convert_0_in_context.xdc] for cell 'base_i/video/hdmi_out/color_convert'
+Parsing XDC File [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_axi_dynclk_0/base_axi_dynclk_0/base_axi_dynclk_0_in_context.xdc] for cell 'base_i/video/hdmi_out/frontend/axi_dynclk'
+Finished Parsing XDC File [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_axi_dynclk_0/base_axi_dynclk_0/base_axi_dynclk_0_in_context.xdc] for cell 'base_i/video/hdmi_out/frontend/axi_dynclk'
+Parsing XDC File [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_color_swap_0_1/base_color_swap_0_1/base_color_swap_0_1_in_context.xdc] for cell 'base_i/video/hdmi_out/frontend/color_swap_0'
+Finished Parsing XDC File [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_color_swap_0_1/base_color_swap_0_1/base_color_swap_0_1_in_context.xdc] for cell 'base_i/video/hdmi_out/frontend/color_swap_0'
+Parsing XDC File [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_hdmi_out_hpd_video_0/base_hdmi_out_hpd_video_0/base_hdmi_out_hpd_video_0_in_context.xdc] for cell 'base_i/video/hdmi_out/frontend/hdmi_out_hpd_video'
+Finished Parsing XDC File [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_hdmi_out_hpd_video_0/base_hdmi_out_hpd_video_0/base_hdmi_out_hpd_video_0_in_context.xdc] for cell 'base_i/video/hdmi_out/frontend/hdmi_out_hpd_video'
+Parsing XDC File [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_rgb2dvi_0_0/base_rgb2dvi_0_0/base_rgb2dvi_0_0_in_context.xdc] for cell 'base_i/video/hdmi_out/frontend/rgb2dvi_0'
+WARNING: [Vivado 12-584] No ports matched ''. [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_rgb2dvi_0_0/base_rgb2dvi_0_0/base_rgb2dvi_0_0_in_context.xdc:1]
+Finished Parsing XDC File [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_rgb2dvi_0_0/base_rgb2dvi_0_0/base_rgb2dvi_0_0_in_context.xdc] for cell 'base_i/video/hdmi_out/frontend/rgb2dvi_0'
+Parsing XDC File [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_v_axi4s_vid_out_0_0/base_v_axi4s_vid_out_0_0/base_v_axi4s_vid_out_0_0_in_context.xdc] for cell 'base_i/video/hdmi_out/frontend/v_axi4s_vid_out_0'
+Finished Parsing XDC File [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_v_axi4s_vid_out_0_0/base_v_axi4s_vid_out_0_0/base_v_axi4s_vid_out_0_0_in_context.xdc] for cell 'base_i/video/hdmi_out/frontend/v_axi4s_vid_out_0'
+Parsing XDC File [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_vtc_out_0/base_vtc_out_0/base_vtc_out_0_in_context.xdc] for cell 'base_i/video/hdmi_out/frontend/vtc_out'
+Finished Parsing XDC File [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_vtc_out_0/base_vtc_out_0/base_vtc_out_0_in_context.xdc] for cell 'base_i/video/hdmi_out/frontend/vtc_out'
+Parsing XDC File [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_pixel_unpack_0/base_pixel_unpack_0/base_pixel_unpack_0_in_context.xdc] for cell 'base_i/video/hdmi_out/pixel_unpack'
+Finished Parsing XDC File [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_pixel_unpack_0/base_pixel_unpack_0/base_pixel_unpack_0_in_context.xdc] for cell 'base_i/video/hdmi_out/pixel_unpack'
+Parsing XDC File [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_proc_sys_reset_pixelclk_0/base_proc_sys_reset_pixelclk_0/base_rst_ps7_0_fclk0_0_in_context.xdc] for cell 'base_i/video/proc_sys_reset_pixelclk'
+Finished Parsing XDC File [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_proc_sys_reset_pixelclk_0/base_proc_sys_reset_pixelclk_0/base_rst_ps7_0_fclk0_0_in_context.xdc] for cell 'base_i/video/proc_sys_reset_pixelclk'
+Parsing XDC File [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_axi_dma_0_2/base_axi_dma_0_2/base_axi_dma_0_2_in_context.xdc] for cell 'base_i/axi_dma_0'
+Finished Parsing XDC File [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_axi_dma_0_2/base_axi_dma_0_2/base_axi_dma_0_2_in_context.xdc] for cell 'base_i/axi_dma_0'
+Parsing XDC File [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/base_smartconnect_0_0/base_smartconnect_0_0_in_context.xdc] for cell 'base_i/smartconnect_0'
+Finished Parsing XDC File [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_smartconnect_0_0/base_smartconnect_0_0/base_smartconnect_0_0_in_context.xdc] for cell 'base_i/smartconnect_0'
+Parsing XDC File [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_axi_gpio_0_0/base_axi_gpio_0_0/base_axi_gpio_0_0_in_context.xdc] for cell 'base_i/threshold'
+Finished Parsing XDC File [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_axi_gpio_0_0/base_axi_gpio_0_0/base_axi_gpio_0_0_in_context.xdc] for cell 'base_i/threshold'
+Parsing XDC File [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_s00_regslice_32/base_s00_regslice_32/base_s00_regslice_32_in_context.xdc] for cell 'base_i/ps7_0_axi_periph1/s00_couplers/s00_regslice'
+Finished Parsing XDC File [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_s00_regslice_32/base_s00_regslice_32/base_s00_regslice_32_in_context.xdc] for cell 'base_i/ps7_0_axi_periph1/s00_couplers/s00_regslice'
+Parsing XDC File [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_auto_pc_3/base_auto_pc_3/base_auto_pc_3_in_context.xdc] for cell 'base_i/ps7_0_axi_periph1/s00_couplers/auto_pc'
+Finished Parsing XDC File [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_auto_pc_3/base_auto_pc_3/base_auto_pc_3_in_context.xdc] for cell 'base_i/ps7_0_axi_periph1/s00_couplers/auto_pc'
+Parsing XDC File [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_m00_regslice_32/base_m00_regslice_32/base_m00_regslice_32_in_context.xdc] for cell 'base_i/ps7_0_axi_periph1/m00_couplers/m00_regslice'
+Finished Parsing XDC File [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_m00_regslice_32/base_m00_regslice_32/base_m00_regslice_32_in_context.xdc] for cell 'base_i/ps7_0_axi_periph1/m00_couplers/m00_regslice'
+Parsing XDC File [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_auto_pc_0/base_auto_pc_0/base_auto_pc_0_in_context.xdc] for cell 'base_i/ps7_0_axi_periph1/m00_couplers/auto_pc'
+Finished Parsing XDC File [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_auto_pc_0/base_auto_pc_0/base_auto_pc_0_in_context.xdc] for cell 'base_i/ps7_0_axi_periph1/m00_couplers/auto_pc'
+Parsing XDC File [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_m01_regslice_32/base_m01_regslice_32/base_m01_regslice_32_in_context.xdc] for cell 'base_i/ps7_0_axi_periph1/m01_couplers/m01_regslice'
+Finished Parsing XDC File [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_m01_regslice_32/base_m01_regslice_32/base_m01_regslice_32_in_context.xdc] for cell 'base_i/ps7_0_axi_periph1/m01_couplers/m01_regslice'
+Parsing XDC File [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_auto_pc_1/base_auto_pc_1/base_auto_pc_0_in_context.xdc] for cell 'base_i/ps7_0_axi_periph1/m01_couplers/auto_pc'
+Finished Parsing XDC File [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_auto_pc_1/base_auto_pc_1/base_auto_pc_0_in_context.xdc] for cell 'base_i/ps7_0_axi_periph1/m01_couplers/auto_pc'
+Parsing XDC File [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_m02_regslice_32/base_m02_regslice_32/base_m02_regslice_32_in_context.xdc] for cell 'base_i/ps7_0_axi_periph1/m02_couplers/m02_regslice'
+Finished Parsing XDC File [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_m02_regslice_32/base_m02_regslice_32/base_m02_regslice_32_in_context.xdc] for cell 'base_i/ps7_0_axi_periph1/m02_couplers/m02_regslice'
+Parsing XDC File [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_m03_regslice_30/base_m03_regslice_30/base_m01_regslice_32_in_context.xdc] for cell 'base_i/ps7_0_axi_periph1/m03_couplers/m03_regslice'
+Finished Parsing XDC File [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_m03_regslice_30/base_m03_regslice_30/base_m01_regslice_32_in_context.xdc] for cell 'base_i/ps7_0_axi_periph1/m03_couplers/m03_regslice'
+Parsing XDC File [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_auto_pc_2/base_auto_pc_2/base_auto_pc_0_in_context.xdc] for cell 'base_i/ps7_0_axi_periph1/m03_couplers/auto_pc'
+Finished Parsing XDC File [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_auto_pc_2/base_auto_pc_2/base_auto_pc_0_in_context.xdc] for cell 'base_i/ps7_0_axi_periph1/m03_couplers/auto_pc'
+Parsing XDC File [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_s00_regslice_33/base_s00_regslice_33/base_m02_regslice_32_in_context.xdc] for cell 'base_i/video/axi_interconnect_0/s00_couplers/s00_regslice'
+Finished Parsing XDC File [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_s00_regslice_33/base_s00_regslice_33/base_m02_regslice_32_in_context.xdc] for cell 'base_i/video/axi_interconnect_0/s00_couplers/s00_regslice'
+Parsing XDC File [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_auto_pc_4/base_auto_pc_4/base_auto_pc_0_in_context.xdc] for cell 'base_i/video/axi_interconnect_0/s00_couplers/auto_pc'
+Finished Parsing XDC File [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_auto_pc_4/base_auto_pc_4/base_auto_pc_0_in_context.xdc] for cell 'base_i/video/axi_interconnect_0/s00_couplers/auto_pc'
+Parsing XDC File [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_m00_regslice_33/base_m00_regslice_33/base_m01_regslice_32_in_context.xdc] for cell 'base_i/video/axi_interconnect_0/m00_couplers/m00_regslice'
+Finished Parsing XDC File [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_m00_regslice_33/base_m00_regslice_33/base_m01_regslice_32_in_context.xdc] for cell 'base_i/video/axi_interconnect_0/m00_couplers/m00_regslice'
+Parsing XDC File [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_m01_regslice_33/base_m01_regslice_33/base_m01_regslice_33_in_context.xdc] for cell 'base_i/video/axi_interconnect_0/m01_couplers/m01_regslice'
+Finished Parsing XDC File [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_m01_regslice_33/base_m01_regslice_33/base_m01_regslice_33_in_context.xdc] for cell 'base_i/video/axi_interconnect_0/m01_couplers/m01_regslice'
+Parsing XDC File [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_auto_cc_0/base_auto_cc_0/base_auto_cc_0_in_context.xdc] for cell 'base_i/video/axi_interconnect_0/m01_couplers/auto_cc'
+Finished Parsing XDC File [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_auto_cc_0/base_auto_cc_0/base_auto_cc_0_in_context.xdc] for cell 'base_i/video/axi_interconnect_0/m01_couplers/auto_cc'
+Parsing XDC File [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_m02_regslice_33/base_m02_regslice_33/base_m02_regslice_33_in_context.xdc] for cell 'base_i/video/axi_interconnect_0/m02_couplers/m02_regslice'
+Finished Parsing XDC File [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_m02_regslice_33/base_m02_regslice_33/base_m02_regslice_33_in_context.xdc] for cell 'base_i/video/axi_interconnect_0/m02_couplers/m02_regslice'
+Parsing XDC File [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_auto_cc_1/base_auto_cc_1/base_auto_cc_1_in_context.xdc] for cell 'base_i/video/axi_interconnect_0/m02_couplers/auto_cc'
+Finished Parsing XDC File [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_auto_cc_1/base_auto_cc_1/base_auto_cc_1_in_context.xdc] for cell 'base_i/video/axi_interconnect_0/m02_couplers/auto_cc'
+Parsing XDC File [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_m03_regslice_31/base_m03_regslice_31/base_m03_regslice_31_in_context.xdc] for cell 'base_i/video/axi_interconnect_0/m03_couplers/m03_regslice'
+Finished Parsing XDC File [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_m03_regslice_31/base_m03_regslice_31/base_m03_regslice_31_in_context.xdc] for cell 'base_i/video/axi_interconnect_0/m03_couplers/m03_regslice'
+Parsing XDC File [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_m04_regslice_0/base_m04_regslice_0/base_m01_regslice_32_in_context.xdc] for cell 'base_i/video/axi_interconnect_0/m04_couplers/m04_regslice'
+Finished Parsing XDC File [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_m04_regslice_0/base_m04_regslice_0/base_m01_regslice_32_in_context.xdc] for cell 'base_i/video/axi_interconnect_0/m04_couplers/m04_regslice'
+Parsing XDC File [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_m05_regslice_0/base_m05_regslice_0/base_m01_regslice_32_in_context.xdc] for cell 'base_i/video/axi_interconnect_0/m05_couplers/m05_regslice'
+Finished Parsing XDC File [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_m05_regslice_0/base_m05_regslice_0/base_m01_regslice_32_in_context.xdc] for cell 'base_i/video/axi_interconnect_0/m05_couplers/m05_regslice'
+Parsing XDC File [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_m06_regslice_0/base_m06_regslice_0/base_m02_regslice_33_in_context.xdc] for cell 'base_i/video/axi_interconnect_0/m06_couplers/m06_regslice'
+Finished Parsing XDC File [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_m06_regslice_0/base_m06_regslice_0/base_m02_regslice_33_in_context.xdc] for cell 'base_i/video/axi_interconnect_0/m06_couplers/m06_regslice'
+Parsing XDC File [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_auto_cc_2/base_auto_cc_2/base_auto_cc_1_in_context.xdc] for cell 'base_i/video/axi_interconnect_0/m06_couplers/auto_cc'
+Finished Parsing XDC File [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_auto_cc_2/base_auto_cc_2/base_auto_cc_1_in_context.xdc] for cell 'base_i/video/axi_interconnect_0/m06_couplers/auto_cc'
+Parsing XDC File [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_m07_regslice_0/base_m07_regslice_0/base_m01_regslice_33_in_context.xdc] for cell 'base_i/video/axi_interconnect_0/m07_couplers/m07_regslice'
+Finished Parsing XDC File [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_m07_regslice_0/base_m07_regslice_0/base_m01_regslice_33_in_context.xdc] for cell 'base_i/video/axi_interconnect_0/m07_couplers/m07_regslice'
+Parsing XDC File [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_auto_cc_3/base_auto_cc_3/base_auto_cc_0_in_context.xdc] for cell 'base_i/video/axi_interconnect_0/m07_couplers/auto_cc'
+Finished Parsing XDC File [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_auto_cc_3/base_auto_cc_3/base_auto_cc_0_in_context.xdc] for cell 'base_i/video/axi_interconnect_0/m07_couplers/auto_cc'
+Parsing XDC File [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_m08_regslice_0/base_m08_regslice_0/base_m01_regslice_32_in_context.xdc] for cell 'base_i/video/axi_interconnect_0/m08_couplers/m08_regslice'
+Finished Parsing XDC File [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_m08_regslice_0/base_m08_regslice_0/base_m01_regslice_32_in_context.xdc] for cell 'base_i/video/axi_interconnect_0/m08_couplers/m08_regslice'
+Parsing XDC File [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_m09_regslice_0/base_m09_regslice_0/base_m01_regslice_32_in_context.xdc] for cell 'base_i/video/axi_interconnect_0/m09_couplers/m09_regslice'
+Finished Parsing XDC File [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_m09_regslice_0/base_m09_regslice_0/base_m01_regslice_32_in_context.xdc] for cell 'base_i/video/axi_interconnect_0/m09_couplers/m09_regslice'
+Parsing XDC File [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_auto_us_0/base_auto_us_0/base_auto_us_0_in_context.xdc] for cell 'base_i/video/axi_mem_intercon/s01_couplers/auto_us'
+Finished Parsing XDC File [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_auto_us_0/base_auto_us_0/base_auto_us_0_in_context.xdc] for cell 'base_i/video/axi_mem_intercon/s01_couplers/auto_us'
+Parsing XDC File [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_auto_pc_5/base_auto_pc_5/base_auto_pc_5_in_context.xdc] for cell 'base_i/video/axi_mem_intercon/m00_couplers/auto_pc'
+Finished Parsing XDC File [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_auto_pc_5/base_auto_pc_5/base_auto_pc_5_in_context.xdc] for cell 'base_i/video/axi_mem_intercon/m00_couplers/auto_pc'
+Parsing XDC File [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_axis_sobel_0_2/base_axis_sobel_0_2/base_axis_sobel_0_2_in_context.xdc] for cell 'base_i/axis_sobel_0'
+Finished Parsing XDC File [c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_axis_sobel_0_2/base_axis_sobel_0_2/base_axis_sobel_0_2_in_context.xdc] for cell 'base_i/axis_sobel_0'
+Parsing XDC File [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/constrs_1/new/xdc.xdc]
+Finished Parsing XDC File [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/constrs_1/new/xdc.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/constrs_1/new/xdc.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/base_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/base_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1295.691 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 2 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 1295.691 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'base_i/video/axi_vdma' at clock pin 'm_axi_mm2s_aclk' is different from the actual clock period '7.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'base_i/video/proc_sys_reset_pixelclk' at clock pin 'slowest_sync_clk' is different from the actual clock period '6.060', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'base_i/video/hdmi_in/frontend/v_vid_in_axi4s_0' at clock pin 'vid_io_in_clk' is different from the actual clock period '6.060', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'base_i/video/hdmi_in/frontend/vtc_in' at clock pin 'clk' is different from the actual clock period '6.060', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '6.060' specified during out-of-context synthesis of instance 'base_i/video/hdmi_out/frontend/rgb2dvi_0' at clock pin 'PixelClk' is different from the actual clock period '5.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'base_i/video/hdmi_out/frontend/v_axi4s_vid_out_0' at clock pin 'vid_io_out_clk' is different from the actual clock period '5.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'base_i/video/hdmi_out/frontend/vtc_out' at clock pin 'clk' is different from the actual clock period '5.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1305.398 ; gain = 281.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1305.398 ; gain = 281.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[0]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 7).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[0]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 8).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[10]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 9).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[10]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 10).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[11]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 11).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[11]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 12).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[12]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 13).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[12]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 14).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[13]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 15).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[13]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 16).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[14]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 17).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[14]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 18).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[1]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 19).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[1]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 20).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[2]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 21).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[2]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 22).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[3]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 23).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[3]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 24).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[4]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 25).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[4]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 26).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[5]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 27).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[5]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 28).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[6]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 29).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[6]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 30).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[7]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 31).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[7]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 32).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[8]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 33).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[8]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 34).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[9]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 35).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[9]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 36).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ba[0]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 37).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ba[0]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 38).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ba[1]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 39).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ba[1]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 40).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ba[2]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 41).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ba[2]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 42).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_cas_n. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 43).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_cas_n. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 44).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_cke. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 45).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_cke. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 46).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_cs_n. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 47).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_cs_n. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 48).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ck_p. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 49).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ck_p. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 50).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ck_n. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 51).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ck_n. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 52).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dm[0]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 53).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dm[0]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 54).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dm[1]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 55).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dm[1]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 56).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dm[2]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 57).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dm[2]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 58).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dm[3]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 59).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dm[3]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 60).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_p[0]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 61).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_p[0]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 62).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_p[1]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 63).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_p[1]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 64).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_p[2]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 65).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_p[2]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 66).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_p[3]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 67).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_p[3]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 68).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_n[0]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 69).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_n[0]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 70).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_n[1]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 71).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_n[1]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 72).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_n[2]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 73).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_n[2]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 74).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_n[3]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 75).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_n[3]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 76).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[0]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 77).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[0]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 78).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[10]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 79).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[10]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 80).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[11]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 81).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[11]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 82).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[12]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 83).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[12]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 84).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[13]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 85).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[13]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 86).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[14]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 87).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[14]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 88).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[15]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 89).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[15]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 90).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[16]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 91).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[16]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 92).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[17]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 93).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[17]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 94).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[18]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 95).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[18]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 96).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[19]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 97).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[19]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 98).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[1]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 99).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[1]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 100).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[20]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 101).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[20]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 102).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[21]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 103).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[21]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 104).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[22]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 105).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[22]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 106).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[23]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 107).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[23]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 108).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[24]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 109).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[24]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 110).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[25]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 111).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[25]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 112).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[26]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 113).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[26]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 114).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[27]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 115).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[27]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 116).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[28]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 117).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[28]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 118).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[29]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 119).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[29]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 120).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[2]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 121).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[2]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 122).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[30]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 123).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[30]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 124).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[31]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 125).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[31]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 126).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[3]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 127).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[3]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 128).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[4]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 129).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[4]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 130).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[5]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 131).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[5]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 132).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[6]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 133).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[6]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 134).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[7]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 135).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[7]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 136).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[8]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 137).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[8]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 138).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[9]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 139).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[9]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 140).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_reset_n. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 141).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_reset_n. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 142).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_odt. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 143).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_odt. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 144).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ras_n. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 145).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ras_n. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 146).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_ddr_vrn. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 147).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ddr_vrn. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 148).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_ddr_vrp. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 149).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ddr_vrp. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 150).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_we_n. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 151).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_we_n. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 152).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[0]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 153).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[0]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 154).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[10]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 155).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[10]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 156).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[11]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 157).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[11]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 158).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[12]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 159).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[12]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 160).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[13]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 161).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[13]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 162).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[14]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 163).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[14]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 164).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[15]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 165).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[15]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 166).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[16]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 167).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[16]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 168).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[17]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 169).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[17]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 170).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[18]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 171).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[18]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 172).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[19]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 173).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[19]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 174).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[1]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 175).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[1]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 176).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[20]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 177).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[20]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 178).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[21]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 179).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[21]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 180).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[22]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 181).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[22]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 182).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[23]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 183).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[23]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 184).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[24]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 185).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[24]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 186).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[25]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 187).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[25]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 188).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[26]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 189).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[26]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 190).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[27]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 191).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[27]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 192).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[28]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 193).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[28]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 194).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[29]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 195).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[29]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 196).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[2]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 197).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[2]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 198).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[30]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 199).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[30]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 200).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[31]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 201).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[31]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 202).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[32]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 203).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[32]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 204).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[33]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 205).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[33]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 206).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[34]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 207).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[34]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 208).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[35]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 209).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[35]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 210).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[36]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 211).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[36]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 212).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[37]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 213).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[37]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 214).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[38]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 215).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[38]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 216).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[39]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 217).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[39]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 218).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[3]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 219).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[3]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 220).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[40]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 221).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[40]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 222).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[41]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 223).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[41]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 224).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[42]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 225).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[42]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 226).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[43]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 227).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[43]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 228).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[44]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 229).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[44]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 230).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[45]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 231).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[45]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 232).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[46]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 233).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[46]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 234).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[47]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 235).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[47]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 236).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[48]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 237).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[48]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 238).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[49]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 239).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[49]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 240).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[4]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 241).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[4]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 242).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[50]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 243).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[50]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 244).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[51]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 245).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[51]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 246).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[52]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 247).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[52]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 248).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[53]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 249).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[53]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 250).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[5]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 251).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[5]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 252).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[6]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 253).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[6]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 254).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[7]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 255).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[7]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 256).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[8]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 257).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[8]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 258).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[9]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 259).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[9]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 260).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_ps_clk. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 261).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ps_clk. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 262).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_ps_porb. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 263).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ps_porb. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 264).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_ps_srstb. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 265).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ps_srstb. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 266).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_in_clk_n. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_dvi2rgb_0_0/base_dvi2rgb_0_0/base_dvi2rgb_0_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_in_clk_n. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_dvi2rgb_0_0/base_dvi2rgb_0_0/base_dvi2rgb_0_0_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_in_clk_p. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_dvi2rgb_0_0/base_dvi2rgb_0_0/base_dvi2rgb_0_0_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_in_clk_p. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_dvi2rgb_0_0/base_dvi2rgb_0_0/base_dvi2rgb_0_0_in_context.xdc, line 6).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_in_data_n[0]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_dvi2rgb_0_0/base_dvi2rgb_0_0/base_dvi2rgb_0_0_in_context.xdc, line 7).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_in_data_n[0]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_dvi2rgb_0_0/base_dvi2rgb_0_0/base_dvi2rgb_0_0_in_context.xdc, line 8).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_in_data_n[1]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_dvi2rgb_0_0/base_dvi2rgb_0_0/base_dvi2rgb_0_0_in_context.xdc, line 9).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_in_data_n[1]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_dvi2rgb_0_0/base_dvi2rgb_0_0/base_dvi2rgb_0_0_in_context.xdc, line 10).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_in_data_n[2]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_dvi2rgb_0_0/base_dvi2rgb_0_0/base_dvi2rgb_0_0_in_context.xdc, line 11).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_in_data_n[2]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_dvi2rgb_0_0/base_dvi2rgb_0_0/base_dvi2rgb_0_0_in_context.xdc, line 12).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_in_data_p[0]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_dvi2rgb_0_0/base_dvi2rgb_0_0/base_dvi2rgb_0_0_in_context.xdc, line 13).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_in_data_p[0]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_dvi2rgb_0_0/base_dvi2rgb_0_0/base_dvi2rgb_0_0_in_context.xdc, line 14).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_in_data_p[1]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_dvi2rgb_0_0/base_dvi2rgb_0_0/base_dvi2rgb_0_0_in_context.xdc, line 15).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_in_data_p[1]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_dvi2rgb_0_0/base_dvi2rgb_0_0/base_dvi2rgb_0_0_in_context.xdc, line 16).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_in_data_p[2]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_dvi2rgb_0_0/base_dvi2rgb_0_0/base_dvi2rgb_0_0_in_context.xdc, line 17).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_in_data_p[2]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_dvi2rgb_0_0/base_dvi2rgb_0_0/base_dvi2rgb_0_0_in_context.xdc, line 18).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_out_clk_n. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_rgb2dvi_0_0/base_rgb2dvi_0_0/base_rgb2dvi_0_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_out_clk_n. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_rgb2dvi_0_0/base_rgb2dvi_0_0/base_rgb2dvi_0_0_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_out_clk_p. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_rgb2dvi_0_0/base_rgb2dvi_0_0/base_rgb2dvi_0_0_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_out_clk_p. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_rgb2dvi_0_0/base_rgb2dvi_0_0/base_rgb2dvi_0_0_in_context.xdc, line 6).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_out_data_n[0]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_rgb2dvi_0_0/base_rgb2dvi_0_0/base_rgb2dvi_0_0_in_context.xdc, line 7).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_out_data_n[0]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_rgb2dvi_0_0/base_rgb2dvi_0_0/base_rgb2dvi_0_0_in_context.xdc, line 8).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_out_data_n[1]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_rgb2dvi_0_0/base_rgb2dvi_0_0/base_rgb2dvi_0_0_in_context.xdc, line 9).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_out_data_n[1]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_rgb2dvi_0_0/base_rgb2dvi_0_0/base_rgb2dvi_0_0_in_context.xdc, line 10).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_out_data_n[2]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_rgb2dvi_0_0/base_rgb2dvi_0_0/base_rgb2dvi_0_0_in_context.xdc, line 11).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_out_data_n[2]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_rgb2dvi_0_0/base_rgb2dvi_0_0/base_rgb2dvi_0_0_in_context.xdc, line 12).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_out_data_p[0]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_rgb2dvi_0_0/base_rgb2dvi_0_0/base_rgb2dvi_0_0_in_context.xdc, line 13).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_out_data_p[0]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_rgb2dvi_0_0/base_rgb2dvi_0_0/base_rgb2dvi_0_0_in_context.xdc, line 14).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_out_data_p[1]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_rgb2dvi_0_0/base_rgb2dvi_0_0/base_rgb2dvi_0_0_in_context.xdc, line 15).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_out_data_p[1]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_rgb2dvi_0_0/base_rgb2dvi_0_0/base_rgb2dvi_0_0_in_context.xdc, line 16).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_out_data_p[2]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_rgb2dvi_0_0/base_rgb2dvi_0_0/base_rgb2dvi_0_0_in_context.xdc, line 17).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_out_data_p[2]. (constraint file  c:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.srcs/sources_1/bd/base/ip/base_rgb2dvi_0_0/base_rgb2dvi_0_0/base_rgb2dvi_0_0_in_context.xdc, line 18).
+Applied set_property DONT_TOUCH = true for base_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for base_i/ps7_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for base_i/ps7_0_axi_periph1/xbar. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for base_i/ps7_0_axi_periph1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for base_i/rst_ps7_0_fclk0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for base_i/rst_ps7_0_fclk1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for base_i/system_interrupts. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for base_i/video/axi_interconnect_0/xbar. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for base_i/video/axi_interconnect_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for base_i/video/axi_mem_intercon/xbar. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for base_i/video/axi_mem_intercon. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for base_i/video/axi_vdma. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for base_i/video/hdmi_in/axis_register_slice_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for base_i/video/hdmi_in/color_convert. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for base_i/video/hdmi_in/frontend/axi_gpio_hdmiin. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for base_i/video/hdmi_in/frontend/color_swap_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for base_i/video/hdmi_in/frontend/dvi2rgb_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for base_i/video/hdmi_in/frontend/v_vid_in_axi4s_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for base_i/video/hdmi_in/frontend/vtc_in. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for base_i/video/hdmi_in/pixel_pack. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for base_i/video/hdmi_out/axis_register_slice_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for base_i/video/hdmi_out/color_convert. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for base_i/video/hdmi_out/frontend/axi_dynclk. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for base_i/video/hdmi_out/frontend/color_swap_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for base_i/video/hdmi_out/frontend/hdmi_out_hpd_video. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for base_i/video/hdmi_out/frontend/rgb2dvi_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for base_i/video/hdmi_out/frontend/v_axi4s_vid_out_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for base_i/video/hdmi_out/frontend/vtc_out. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for base_i/video/hdmi_out/pixel_unpack. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for base_i/video/proc_sys_reset_pixelclk. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for base_i/video/xlconcat_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for base_i/axi_dma_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for base_i/xlconcat_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for base_i/smartconnect_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for base_i/xlconcat_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for base_i/threshold. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for base_i/ps7_0_axi_periph1/s00_couplers/s00_regslice. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for base_i/ps7_0_axi_periph1/s00_couplers/auto_pc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for base_i/ps7_0_axi_periph1/m00_couplers/m00_regslice. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for base_i/ps7_0_axi_periph1/m00_couplers/auto_pc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for base_i/ps7_0_axi_periph1/m01_couplers/m01_regslice. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for base_i/ps7_0_axi_periph1/m01_couplers/auto_pc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for base_i/ps7_0_axi_periph1/m02_couplers/m02_regslice. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for base_i/ps7_0_axi_periph1/m03_couplers/m03_regslice. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for base_i/ps7_0_axi_periph1/m03_couplers/auto_pc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for base_i/video/axi_interconnect_0/s00_couplers/s00_regslice. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for base_i/video/axi_interconnect_0/s00_couplers/auto_pc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for base_i/video/axi_interconnect_0/m00_couplers/m00_regslice. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for base_i/video/axi_interconnect_0/m01_couplers/m01_regslice. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for base_i/video/axi_interconnect_0/m01_couplers/auto_cc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for base_i/video/axi_interconnect_0/m02_couplers/m02_regslice. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for base_i/video/axi_interconnect_0/m02_couplers/auto_cc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for base_i/video/axi_interconnect_0/m03_couplers/m03_regslice. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for base_i/video/axi_interconnect_0/m04_couplers/m04_regslice. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for base_i/video/axi_interconnect_0/m05_couplers/m05_regslice. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for base_i/video/axi_interconnect_0/m06_couplers/m06_regslice. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for base_i/video/axi_interconnect_0/m06_couplers/auto_cc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for base_i/video/axi_interconnect_0/m07_couplers/m07_regslice. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for base_i/video/axi_interconnect_0/m07_couplers/auto_cc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for base_i/video/axi_interconnect_0/m08_couplers/m08_regslice. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for base_i/video/axi_interconnect_0/m09_couplers/m09_regslice. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for base_i/video/axi_mem_intercon/s01_couplers/auto_us. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for base_i/video/axi_mem_intercon/m00_couplers/auto_pc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for base_i/axis_sobel_0. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 1305.398 ; gain = 281.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 1305.398 ; gain = 281.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 1305.398 ; gain = 281.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 1305.398 ; gain = 281.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 1305.398 ; gain = 281.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:30 . Memory (MB): peak = 1305.398 ; gain = 281.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 1305.398 ; gain = 281.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 1305.398 ; gain = 281.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 1305.398 ; gain = 281.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 1305.398 ; gain = 281.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 1305.398 ; gain = 281.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 1305.398 ; gain = 281.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-------------------------------+----------+
+|      |BlackBox name                  |Instances |
++------+-------------------------------+----------+
+|1     |base_xbar_7                    |         1|
+|2     |base_auto_pc_0                 |         1|
+|3     |base_m00_regslice_32           |         1|
+|4     |base_auto_pc_1                 |         1|
+|5     |base_m01_regslice_32           |         1|
+|6     |base_m02_regslice_32           |         1|
+|7     |base_auto_pc_2                 |         1|
+|8     |base_m03_regslice_30           |         1|
+|9     |base_auto_pc_3                 |         1|
+|10    |base_s00_regslice_32           |         1|
+|11    |base_axi_dma_0_2               |         1|
+|12    |base_axis_sobel_0_2            |         1|
+|13    |base_ps7_0_0                   |         1|
+|14    |base_rst_ps7_0_fclk0_0         |         1|
+|15    |base_rst_ps7_0_fclk1_0         |         1|
+|16    |base_smartconnect_0_0          |         1|
+|17    |base_system_interrupts_0       |         1|
+|18    |base_axi_gpio_0_0              |         1|
+|19    |base_xbar_9                    |         1|
+|20    |base_m00_regslice_33           |         1|
+|21    |base_auto_cc_0                 |         1|
+|22    |base_m01_regslice_33           |         1|
+|23    |base_auto_cc_1                 |         1|
+|24    |base_m02_regslice_33           |         1|
+|25    |base_m03_regslice_31           |         1|
+|26    |base_m04_regslice_0            |         1|
+|27    |base_m05_regslice_0            |         1|
+|28    |base_auto_cc_2                 |         1|
+|29    |base_m06_regslice_0            |         1|
+|30    |base_auto_cc_3                 |         1|
+|31    |base_m07_regslice_0            |         1|
+|32    |base_m08_regslice_0            |         1|
+|33    |base_m09_regslice_0            |         1|
+|34    |base_auto_pc_4                 |         1|
+|35    |base_s00_regslice_33           |         1|
+|36    |base_xbar_10                   |         1|
+|37    |base_auto_pc_5                 |         1|
+|38    |base_auto_us_0                 |         1|
+|39    |base_axi_vdma_0                |         1|
+|40    |base_proc_sys_reset_pixelclk_0 |         1|
+|41    |base_axis_register_slice_0_0   |         1|
+|42    |base_color_convert_0           |         1|
+|43    |base_pixel_pack_0              |         1|
+|44    |base_axi_gpio_hdmiin_0         |         1|
+|45    |base_color_swap_0_0            |         1|
+|46    |base_dvi2rgb_0_0               |         1|
+|47    |base_v_vid_in_axi4s_0_0        |         1|
+|48    |base_vtc_in_0                  |         1|
+|49    |base_axis_register_slice_0_1   |         1|
+|50    |base_color_convert_1           |         1|
+|51    |base_pixel_unpack_0            |         1|
+|52    |base_axi_dynclk_0              |         1|
+|53    |base_color_swap_0_1            |         1|
+|54    |base_hdmi_out_hpd_video_0      |         1|
+|55    |base_rgb2dvi_0_0               |         1|
+|56    |base_v_axi4s_vid_out_0_0       |         1|
+|57    |base_vtc_out_0                 |         1|
++------+-------------------------------+----------+
+
+Report Cell Usage: 
++------+------------------------------------+------+
+|      |Cell                                |Count |
++------+------------------------------------+------+
+|1     |base_auto_cc_0_bbox                 |     1|
+|2     |base_auto_cc_1_bbox                 |     1|
+|3     |base_auto_cc_2_bbox                 |     1|
+|4     |base_auto_cc_3_bbox                 |     1|
+|5     |base_auto_pc_0_bbox                 |     1|
+|6     |base_auto_pc_1_bbox                 |     1|
+|7     |base_auto_pc_2_bbox                 |     1|
+|8     |base_auto_pc_3_bbox                 |     1|
+|9     |base_auto_pc_4_bbox                 |     1|
+|10    |base_auto_pc_5_bbox                 |     1|
+|11    |base_auto_us_0_bbox                 |     1|
+|12    |base_axi_dma_0_2_bbox               |     1|
+|13    |base_axi_dynclk_0_bbox              |     1|
+|14    |base_axi_gpio_0_0_bbox              |     1|
+|15    |base_axi_gpio_hdmiin_0_bbox         |     1|
+|16    |base_axi_vdma_0_bbox                |     1|
+|17    |base_axis_register_slice_0_0_bbox   |     1|
+|18    |base_axis_register_slice_0_1_bbox   |     1|
+|19    |base_axis_sobel_0_2_bbox            |     1|
+|20    |base_color_convert_0_bbox           |     1|
+|21    |base_color_convert_1_bbox           |     1|
+|22    |base_color_swap_0_0_bbox            |     1|
+|23    |base_color_swap_0_1_bbox            |     1|
+|24    |base_dvi2rgb_0_0_bbox               |     1|
+|25    |base_hdmi_out_hpd_video_0_bbox      |     1|
+|26    |base_m00_regslice_32_bbox           |     1|
+|27    |base_m00_regslice_33_bbox           |     1|
+|28    |base_m01_regslice_32_bbox           |     1|
+|29    |base_m01_regslice_33_bbox           |     1|
+|30    |base_m02_regslice_32_bbox           |     1|
+|31    |base_m02_regslice_33_bbox           |     1|
+|32    |base_m03_regslice_30_bbox           |     1|
+|33    |base_m03_regslice_31_bbox           |     1|
+|34    |base_m04_regslice_0_bbox            |     1|
+|35    |base_m05_regslice_0_bbox            |     1|
+|36    |base_m06_regslice_0_bbox            |     1|
+|37    |base_m07_regslice_0_bbox            |     1|
+|38    |base_m08_regslice_0_bbox            |     1|
+|39    |base_m09_regslice_0_bbox            |     1|
+|40    |base_pixel_pack_0_bbox              |     1|
+|41    |base_pixel_unpack_0_bbox            |     1|
+|42    |base_proc_sys_reset_pixelclk_0_bbox |     1|
+|43    |base_ps7_0_0_bbox                   |     1|
+|44    |base_rgb2dvi_0_0_bbox               |     1|
+|45    |base_rst_ps7_0_fclk0_0_bbox         |     1|
+|46    |base_rst_ps7_0_fclk1_0_bbox         |     1|
+|47    |base_s00_regslice_32_bbox           |     1|
+|48    |base_s00_regslice_33_bbox           |     1|
+|49    |base_smartconnect_0_0_bbox          |     1|
+|50    |base_system_interrupts_0_bbox       |     1|
+|51    |base_v_axi4s_vid_out_0_0_bbox       |     1|
+|52    |base_v_vid_in_axi4s_0_0_bbox        |     1|
+|53    |base_vtc_in_0_bbox                  |     1|
+|54    |base_vtc_out_0_bbox                 |     1|
+|55    |base_xbar_10_bbox                   |     1|
+|56    |base_xbar_7_bbox                    |     1|
+|57    |base_xbar_9_bbox                    |     1|
+|58    |IOBUF                               |     2|
+|59    |OBUF                                |     2|
++------+------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 1305.398 ; gain = 281.703
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:31 . Memory (MB): peak = 1305.398 ; gain = 159.582
+Synthesis Optimization Complete : Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 1305.398 ; gain = 281.703
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.089 . Memory (MB): peak = 1305.398 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1305.398 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 2 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+213 Infos, 13 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:39 ; elapsed = 00:00:59 . Memory (MB): peak = 1305.398 ; gain = 281.703
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/osher/Vivado_Projects/AXIS_SOBEL_BD3/AXIS_SOBEL_BD3.runs/synth_1/base_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file base_wrapper_utilization_synth.rpt -pb base_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu May  1 14:22:34 2025...
